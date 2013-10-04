@@ -1,0 +1,219 @@
+#set( $host_name_base = "discoveryuiap0" )
+#set( $ci_host_name_suffix = "dxdu" )
+#set( $rv_host_name_suffix = "qxdu" )
+#set( $dublin_host_name_suffix = "pxdu" )
+#set( $westerville_host_name_suffix = "pxwe" )
+#set( $ci_host_numbers = [1, 2] )
+#set( $rv_host_numbers = [1, 2] )
+#set( $prod_host_numbers = [1, 2, 3, 4, 5, 6] )
+
+#set( $futurebranch_host_name_base = "dmcclap0" )
+#set( $futurebranch_host_name_suffix = "dxdu" )
+#set( $futurebranch_host_numbers = [3] )
+
+
+    --------------
+    DUI Environments
+    --------------
+    Jonathan Baker
+    --------------
+    2012-07-30
+    --------------
+
+Environments
+
+    * QuickBuild: {{{http://buildap01exdu.dev.oclc.org:8810/}http://buildap01exdu.dev.oclc.org:8810/}}
+
+    * Deploy Directory: /prod/discoveryui/prod
+
+    * Logs Directory: /prod/discoveryui/prod/logs
+
+    <<Quick Links>>
+
+        * {{{http://intranet-wiki.oclc.org/wiki/Pendragon_Institutions}
+Institutions and Provisioning}}
+
+%{toc}
+
+* Continuous Integration
+
+    <<Note: Change the Institution as required>>
+
+    * Load Balancer: {{{http://osu.discoveryui.ent.oclc.org/}http://osu.discoveryui.ent.oclc.org/}}
+
+    * Health Check via Load Balancer (random machine): {{{http://osu.discoveryui.ent.oclc.org/health}http://osu.discoveryui.ent.oclc.org/health}}
+
+    * AMP: {{{http://ovdashboard.ent.oclc.org/amp/amp.cgi?system\=DiscoveryUI}http://ovdashboard.ent.oclc.org/amp/amp.cgi?system\=DiscoveryUI}}
+
+    * Logs: {{{http://ovdashboard.ent.oclc.org/amp/amp.cgi?system\=DiscoveryUI&command\=logFileAnalysis}http://ovdashboard.ent.oclc.org/amp/amp.cgi?system\=DiscoveryUI&command\=logFileAnalysis}}
+
+    * Individual Machines:
+
+#foreach( $hostNum in $ci_host_numbers )
+#set( $host_name =  "$host_name_base$hostNum$ci_host_name_suffix")
+        * $host_name
+
+            * Webapp: {{{http://osu.${host_name}.dev.oclc.org:8080}http://osu.${host_name}.dev.oclc.org:8080}}
+
+            * HealthCheck: {{{http://ocwms.${host_name}.dev.oclc.org:8080/health}http://ocwms.${host_name}.dev.oclc.org:8080/health}}
+
+            * OccWeb: {{{http://${host_name}.dev.oclc.org:8081}http://${host_name}.dev.oclc.org:8081}}
+
+            * JMX: ${host_name}.dev.oclc.org:8086
+
+            []
+
+#end
+        []
+    []
+
+    NOTE: In order to reduce our dependency on EIDM for our CI environment, we have configured Quickbuild to be able to quickly switch between a real implementation of EIDM and a mock one. If you go to our CI configuration in QuickBuild there is a variable in the variables section named imakeupDeployProperties. In this variable we have a special iMakeup command-line argument defined --d ACTIVE_SPRING_PROFILE=PROFILE_NAME
+
+    There are currently two valid values for PROFILE_NAME
+
+        * default - This will use the real EIDM implementation. (i.e. --d ACTIVE_SPRING_PROFILE=default)
+
+        * mock-idm - This will use the mock EIDM implementation. (i.e. --d ACTIVE_SPRING_PROFILE=mock-idm)
+
+    If you change the value and re-run the environment deploy then we will be pointing to the correct EIDM implementation.
+
+* Canned Testing
+
+    * discoveryuiap03dxdu
+
+            * Webapp: {{{http://osu.discoveryuiap03dxdu.dev.oclc.org:8080}http://osu.discoveryuiap03dxdu.dev.oclc.org:8080}}
+
+            * OccWeb: {{{http://discoveryuiap03dxdu.dev.oclc.org:8081}http://discoveryuiap03dxdu.dev.oclc.org:8081}}
+
+            * JMX: discoveryuiap03dxdu.dev.oclc.org:8086
+
+            []
+
+    This environment is used to perform testing with pre-recorded responses.  You can modify the configuration for this project by
+    going to the following url: {{{http://disctrsap01dxdu.dev.oclc.org:8080/trs2ui/${project.artifactId}/switch}http://disctrsap01dxdu.dev.oclc.org:8080/trs2ui/${project.artifactId}/switch}}
+
+    You can see and re-record all of the responses at this url: {{{http://disctrsap01dxdu.dev.oclc.org:8080/trs2ui/${project.artifactId}/dumpall}http://disctrsap01dxdu.dev.oclc.org:8080/trs2ui/${project.artifactId}/dumpall}}
+
+    The description of how to configure the TRS correctly should be found {{{http://linuxiweb.dev.oclc.org/~fna_ci/projects/TestResponseService2/}here}}
+
+* Release Verification
+
+    <<Note: Change the Institution as required>>
+
+    * Load Balancer: {{{http://osu.discoveryui-rv.ent.oclc.org/}http://osu.discoveryui-rv.ent.oclc.org/}}
+
+    * AMP: {{{http://qadashboard.dev.oclc.org/amp/amp.cgi?system\=DiscoveryUI}http://qadashboard.dev.oclc.org/amp/amp.cgi?system\=DiscoveryUI}}
+
+    * Logs: {{{http://qadashboard.dev.oclc.org/amp/amp.cgi?system\=DiscoveryUI&command\=logFileAnalysis}http://qadashboard.dev.oclc.org/amp/amp.cgi?system\=DiscoveryUI&command\=logFileAnalysis}}
+
+    * Individual Machines:
+
+#foreach( $hostNum in $rv_host_numbers )
+#set( $host_name =  "$host_name_base$hostNum$rv_host_name_suffix")
+        * $host_name
+
+            * Webapp: {{{http://osu.${host_name}.qa.oclc.org:8080}http://osu.${host_name}.qa.oclc.org:8080}}
+
+            * HealthCheck: {{{http://ocwms.${host_name}.qa.oclc.org:8080/health}http://ocwms.${host_name}.qa.oclc.org:8080/health}}
+
+            * OccWeb: {{{http://${host_name}.qa.oclc.org:8081}http://${host_name}.qa.oclc.org:8081}}
+
+            * JMX: ${host_name}.qa.oclc.org:8086
+
+            []
+
+#end
+        []
+
+    []
+
+* Future Branch Verification
+
+    <<Note: Change the Institution as required>>
+
+    * Load Balancer: [Doesn't exist]
+
+    * Individual Machines:
+
+#foreach( $hostNum in $futurebranch_host_numbers )
+#set( $host_name =  "$futurebranch_host_name_base$hostNum$futurebranch_host_name_suffix")
+        * $host_name
+
+            * Webapp: {{{http://osu.${host_name}.dev.oclc.org:8080}http://osu.${host_name}.dev.oclc.org:8080}}
+
+            * HealthCheck: {{{http://ocwms.${host_name}.dev.oclc.org:8080/health}http://ocwms.${host_name}.dev.oclc.org:8080/health}}
+
+            * OccWeb: {{{http://${host_name}.dev.oclc.org:8081}http://${host_name}.dev.oclc.org:8081}}
+
+            * JMX: ${host_name}.dev.oclc.org:8086
+
+            []
+
+#end
+        []
+
+    []
+
+* Production
+
+** Dublin
+
+    <<Note: Change the Institution as required>>
+
+    * Publicly Visible DNS Name Examples:
+
+        * osu.beta.worldcat.org
+
+        * osu.on.worldcat.org
+
+    * Load Balancer: {{{http://osu.discoveryui.prod.oclc.org}http://osu.discoveryui.prod.oclc.org}}
+
+    * AMP: {{{http://dashboard.oclc.org/amp/amp.cgi?system\=DiscoveryUI}http://dashboard.oclc.org/amp/amp.cgi?system\=DiscoveryUI}}
+
+    * Logs: {{{http://dashboard.oclc.org/amp/amp.cgi?system\=DiscoveryUI&command\=logFileAnalysis}http://dashboard.oclc.org/amp/amp.cgi?system\=DiscoveryUI&command\=logFileAnalysis}}
+
+    * Individual Machines:
+
+#foreach( $hostNum in $prod_host_numbers )
+#set( $host_name =  "$host_name_base$hostNum$dublin_host_name_suffix")
+        * $host_name
+
+            * Webapp: {{{http://osu.${host_name}.prod.oclc.org:8080}http://osu.${host_name}.prod.oclc.org:8080}}
+
+            * HealthCheck: {{{http://ocwms.${host_name}.prod.oclc.org:8080/health}http://ocwms.${host_name}.prod.oclc.org:8080/health}}
+
+            * OccWeb: {{{http://${host_name}.prod.oclc.org:8007}http://${host_name}.prod.oclc.org:8007}}
+
+            []
+
+#end
+        []
+
+    []
+
+** Westerville
+
+    <<Note: Change the Institution as required>>
+
+    * AMP: {{{http://dashboard.csdc.oclc.org/amp/amp.cgi?system\=DiscoveryUI}http://dashboard.csdc.oclc.org/amp/amp.cgi?system\=DiscoveryUI}}
+
+    * Logs: {{{http://dashboard.csdc.oclc.org/amp/amp.cgi?system\=DiscoveryUI&command\=logFileAnalysis}http://dashboard.csdc.oclc.org/amp/amp.cgi?system\=DiscoveryUI&command\=logFileAnalysis}}
+
+    * Individual Machines:
+
+#foreach( $hostNum in $prod_host_numbers )
+#set( $host_name =  "$host_name_base$hostNum$westerville_host_name_suffix")
+        * $host_name
+
+            * Webapp: {{{http://osu.${host_name}.prod.oclc.org:8080}http://osu.${host_name}.prod.oclc.org:8080}}
+
+            * HealthCheck: {{{http://ocwms.${host_name}.prod.oclc.org:8080/health}http://ocwms.${host_name}.prod.oclc.org:8080/health}}
+
+            * OccWeb: {{{http://${host_name}.prod.oclc.org:8081}http://${host_name}.prod.oclc.org:8007}}
+
+            []
+
+#end
+        []
+
+    []

@@ -1,0 +1,164 @@
+11:45:08.841 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@466a3728, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@674b4735, org.gradle.logging.internal.JavaUtilLoggingConfigurer@7f301d8d]
+11:45:09.550 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@466a3728, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@674b4735, org.gradle.logging.internal.JavaUtilLoggingConfigurer@7f301d8d]
+11:45:09.553 [INFO] [org.gradle.BuildLogger] Starting Build
+11:45:09.553 [DEBUG] [org.gradle.BuildLogger] Gradle user home: C:\Users\chengy\.gradle
+11:45:09.553 [DEBUG] [org.gradle.BuildLogger] Current dir: C:\Project\gradle\sampleGradleJavaProject
+11:45:09.554 [DEBUG] [org.gradle.BuildLogger] Settings file: null
+11:45:09.555 [DEBUG] [org.gradle.BuildLogger] Build file: null
+11:45:09.575 [DEBUG] [org.gradle.initialization.buildsrc.BuildSourceBuilder] Starting to build the build sources.
+11:45:09.576 [DEBUG] [org.gradle.initialization.buildsrc.BuildSourceBuilder] Gradle source dir does not exist. We leave.
+11:45:09.576 [DEBUG] [org.gradle.initialization.DefaultGradlePropertiesLoader] Found env project properties: []
+11:45:09.577 [DEBUG] [org.gradle.initialization.DefaultGradlePropertiesLoader] Found system project properties: []
+11:45:09.694 [DEBUG] [org.gradle.api.internal.artifacts.mvnsettings.DefaultLocalMavenRepositoryLocator] No local repository in Settings file defined. Using default path: C:\Users\chengy\.m2\repository
+11:45:09.892 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@466a3728, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@674b4735, org.gradle.logging.internal.JavaUtilLoggingConfigurer@7f301d8d]
+11:45:09.902 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@466a3728, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@674b4735, org.gradle.logging.internal.JavaUtilLoggingConfigurer@7f301d8d]
+11:45:09.902 [DEBUG] [org.gradle.initialization.ScriptEvaluatingSettingsProcessor] Timing: Processing settings took: 0.325 secs
+11:45:09.903 [INFO] [org.gradle.BuildLogger] Settings evaluated using empty settings script.
+11:45:09.983 [DEBUG] [org.gradle.initialization.ProjectPropertySettingBuildLoader] Looking for project properties from: C:\Project\gradle\sampleGradleJavaProject\gradle.properties
+11:45:09.983 [DEBUG] [org.gradle.initialization.ProjectPropertySettingBuildLoader] project property file does not exists. We continue!
+11:45:09.984 [INFO] [org.gradle.BuildLogger] Projects loaded. Root project using build file 'C:\Project\gradle\sampleGradleJavaProject\build.gradle'.
+11:45:09.985 [INFO] [org.gradle.BuildLogger] Included projects: [root project 'sampleGradleJavaProject']
+11:45:10.305 [INFO] [org.gradle.configuration.project.BuildScriptProcessor] Evaluating root project 'sampleGradleJavaProject' using build file 'C:\Project\gradle\sampleGradleJavaProject\build.gradle'.
+11:45:10.323 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on buildscript class cache for build file 'C:\Project\gradle\sampleGradleJavaProject\build.gradle' (C:\Users\chengy\.gradle\caches\1.8\scripts\build_2p1uakmvgnptmoo553i18j1hmb\ProjectScript\buildscript).
+11:45:10.323 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+11:45:10.327 [INFO] [org.gradle.cache.internal.locklistener.DefaultFileLockContentionHandler] Starting file lock listener thread.
+11:45:10.413 [DEBUG] [org.gradle.api.internal.artifacts.mvnsettings.DefaultLocalMavenRepositoryLocator] No local repository in Settings file defined. Using default path: C:\Users\chengy\.m2\repository
+11:45:10.488 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@466a3728, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@674b4735, org.gradle.logging.internal.JavaUtilLoggingConfigurer@7f301d8d]
+11:45:10.489 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on artifact cache (C:\Users\chengy\.gradle\caches\artifacts-26).
+11:45:10.490 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+11:45:10.491 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultDependencyResolver] Resolving configuration ':classpath'
+11:45:10.506 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.default.settings.dir' to 'jar:file:/C:/gradle-1.8/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings'
+11:45:10.508 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.basedir' to 'C:\Project\gradle\sampleGradleJavaProject\.'
+11:45:10.508 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.default.conf.dir' to 'jar:file:/C:/gradle-1.8/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings'
+11:45:10.545 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.runtime.name' to 'Java(TM) SE Runtime Environment'
+11:45:10.546 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.boot.library.path' to 'C:\Program Files\Java\jdk1.7\jre\bin'
+11:45:10.546 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.version' to '23.25-b01'
+11:45:10.547 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.vendor' to 'Oracle Corporation'
+11:45:10.547 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vendor.url' to 'http://java.oracle.com/'
+11:45:10.547 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'path.separator' to ';'
+11:45:10.548 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.name' to 'Java HotSpot(TM) 64-Bit Server VM'
+11:45:10.548 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'file.encoding.pkg' to 'sun.io'
+11:45:10.548 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.country' to 'US'
+11:45:10.549 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.script' to ''
+11:45:10.549 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.java.launcher' to 'SUN_STANDARD'
+11:45:10.549 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.os.patch.level' to 'Service Pack 1'
+11:45:10.550 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.specification.name' to 'Java Virtual Machine Specification'
+11:45:10.550 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.dir' to 'C:\Project\gradle\sampleGradleJavaProject'
+11:45:10.550 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.runtime.version' to '1.7.0_25-b17'
+11:45:10.551 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.awt.graphicsenv' to 'sun.awt.Win32GraphicsEnvironment'
+11:45:10.551 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.endorsed.dirs' to 'C:\Program Files\Java\jdk1.7\jre\lib\endorsed'
+11:45:10.552 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'os.arch' to 'amd64'
+11:45:10.552 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.io.tmpdir' to 'C:\Users\chengy\AppData\Local\Temp\'
+11:45:10.553 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'line.separator' to '
+'
+11:45:10.553 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'org.gradle.appname' to 'gradle'
+11:45:10.553 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.specification.vendor' to 'Oracle Corporation'
+11:45:10.554 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.variant' to ''
+11:45:10.554 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'os.name' to 'Windows 7'
+11:45:10.554 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'jna.boot.library.path' to 'C:\Users\chengy\.gradle\native\jna\win32-amd64'
+11:45:10.555 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.jnu.encoding' to 'Cp1252'
+11:45:10.555 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.library.path' to 'C:\Program Files\Java\jdk1.7\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;\ C:\Windows\System32\WindowsPowerShell\v1.0\; C:\Program Files (x86)\;C:\Program Files\CollabNet\Subversion Client;C:\Program Files\Java\jdk1.7\bin;C:\Project\Pendragon\apache-tomcat-6.0.36\bin;C:\Project\Pendragon\apache-maven-3.0.5\bin;C:\Project\Pendragon\apache-ant-1.9.2\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\sbt\bin;C:\Program Files\TortoiseSVN\bin;C:\gradle-1.8\bin;.'
+11:45:10.555 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.class.version' to '51.0'
+11:45:10.556 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.specification.name' to 'Java Platform API Specification'
+11:45:10.556 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.management.compiler' to 'HotSpot 64-Bit Tiered Compilers'
+11:45:10.557 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'os.version' to '6.1'
+11:45:10.557 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.home' to 'C:\Users\chengy'
+11:45:10.557 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.timezone' to 'America/New_York'
+11:45:10.558 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.awt.printerjob' to 'sun.awt.windows.WPrinterJob'
+11:45:10.558 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.specification.version' to '1.7'
+11:45:10.558 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'file.encoding' to 'Cp1252'
+11:45:10.559 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.name' to 'chengy'
+11:45:10.559 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.class.path' to 'C:\gradle-1.8\bin\..\lib\gradle-launcher-1.8.jar'
+11:45:10.559 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.specification.version' to '1.7'
+11:45:10.560 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.arch.data.model' to '64'
+11:45:10.560 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.java.command' to 'org.gradle.launcher.GradleMain site --debug'
+11:45:10.560 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.home' to 'C:\Program Files\Java\jdk1.7\jre'
+11:45:10.561 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.specification.vendor' to 'Oracle Corporation'
+11:45:10.561 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.language' to 'en'
+11:45:10.562 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'awt.toolkit' to 'sun.awt.windows.WToolkit'
+11:45:10.562 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.info' to 'mixed mode'
+11:45:10.562 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.version' to '1.7.0_25'
+11:45:10.563 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.ext.dirs' to 'C:\Program Files\Java\jdk1.7\jre\lib\ext;C:\Windows\Sun\Java\lib\ext'
+11:45:10.563 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.boot.class.path' to 'C:\Program Files\Java\jdk1.7\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7\jre\classes'
+11:45:10.563 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vendor' to 'Oracle Corporation'
+11:45:10.564 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'file.separator' to '\'
+11:45:10.564 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vendor.url.bug' to 'http://bugreport.sun.com/bugreport/'
+11:45:10.564 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.io.unicode.encoding' to 'UnicodeLittle'
+11:45:10.565 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.cpu.endian' to 'little'
+11:45:10.565 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.desktop' to 'windows'
+11:45:10.565 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.cpu.isalist' to 'amd64'
+11:45:10.599 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.memcache.InMemoryDependencyMetadataCache] Creating new in-memory cache for repo 'MavenLocal' [967ceb0b4ac5e720b1a010fd9109f2e4].
+11:45:10.633 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.memcache.InMemoryDependencyMetadataCache] Creating new in-memory cache for repo 'maven' [86c00993c38ddca56f9d1d0af467baa6].
+11:45:10.635 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.memcache.InMemoryDependencyMetadataCache] Creating new in-memory cache for repo 'maven2' [63a50baccf27c44de3fee3d51f06c882].
+11:45:10.689 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration :sampleGradleJavaProject:unspecified(classpath).
+11:45:10.694 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency :sampleGradleJavaProject:unspecified(classpath) -> com.breskeby:GradleSite:0.1-SNAPSHOT(dependency: com.breskeby#GradleSite;0.1-SNAPSHOT {classpath=[default]})
+11:45:10.696 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version com.breskeby:GradleSite:0.1-SNAPSHOT
+11:45:10.697 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'com.breskeby:GradleSite:0.1-SNAPSHOT' using repositories [MavenLocal, maven, maven2]
+11:45:10.699 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/com/breskeby/GradleSite/0.1-SNAPSHOT/GradleSite-0.1-SNAPSHOT.pom
+11:45:10.757 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'com.breskeby#GradleSite;0.1-SNAPSHOT' in repository 'MavenLocal'.
+11:45:10.760 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'com.breskeby:GradleSite:0.1-SNAPSHOT' from repository 'MavenLocal'
+11:45:10.761 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration com.breskeby:GradleSite:0.1-SNAPSHOT(default).
+11:45:10.762 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency com.breskeby:GradleSite:0.1-SNAPSHOT(default) -> org.apache.maven.doxia:doxia-converter:1.2(dependency: org.apache.maven.doxia#doxia-converter;1.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+11:45:10.762 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version org.apache.maven.doxia:doxia-converter:1.2
+11:45:10.763 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache.maven.doxia:doxia-converter:1.2' using repositories [MavenLocal, maven, maven2]
+11:45:10.763 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/maven/doxia/doxia-converter/1.2/doxia-converter-1.2.pom
+11:45:10.764 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Resource not reachable for org.apache.maven.doxia:doxia-converter:1.2: res=MissingResource: C:\Users\chengy\.m2\repository/org/apache/maven/doxia/doxia-converter/1.2/doxia-converter-1.2.pom
+11:45:10.765 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/maven/doxia/doxia-converter/1.2/doxia-converter-1.2.jar
+11:45:10.771 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] No ivy file found for module 'org.apache.maven.doxia#doxia-converter;1.2' in repository 'MavenLocal', using default data instead.
+11:45:10.782 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache dynamic-revisions.bin (C:\Users\chengy\.gradle\caches\artifacts-26\dynamic-revisions.bin)
+11:45:10.790 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache module-metadata.bin (C:\Users\chengy\.gradle\caches\artifacts-26\module-metadata.bin)
+11:45:10.795 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Detected non-existence of module 'org.apache.maven.doxia#doxia-converter;1.2' in resolver cache 'maven'
+11:45:10.796 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Detected non-existence of module 'org.apache.maven.doxia#doxia-converter;1.2' in resolver cache 'maven2'
+11:45:10.796 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.apache.maven.doxia:doxia-converter:1.2' from repository 'MavenLocal'
+11:45:10.797 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.apache.maven.doxia:doxia-converter:1.2(default).
+11:45:10.801 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching :sampleGradleJavaProject:unspecified(classpath) to its parents.
+11:45:10.802 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching com.breskeby:GradleSite:0.1-SNAPSHOT(default) to its parents.
+11:45:10.805 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.apache.maven.doxia:doxia-converter:1.2(default) to its parents.
+11:45:10.805 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.oldresult.TransientResultsStore] Flushing resolved configuration data in Binary store in C:\Users\chengy\AppData\Local\Temp\gradle7317296599237495309.bin. Wrote root :sampleGradleJavaProject:unspecified:classpath.
+11:45:10.818 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/com/breskeby/GradleSite/0.1-SNAPSHOT/GradleSite-0.1-SNAPSHOT.jar
+11:45:10.819 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/maven/doxia/doxia-converter/1.2/doxia-converter-1.2.jar
+11:45:10.822 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on no_buildscript class cache for build file 'C:\Project\gradle\sampleGradleJavaProject\build.gradle' (C:\Users\chengy\.gradle\caches\1.8\scripts\build_2p1uakmvgnptmoo553i18j1hmb\ProjectScript\no_buildscript).
+11:45:10.823 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+11:45:11.689 [WARN] [org.gradle.internal.featurelifecycle.LoggingDeprecatedFeatureHandler] The TaskContainer.add() method has been deprecated and is scheduled to be removed in Gradle 2.0. Please use the create() method instead.
+11:45:11.719 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@466a3728, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@674b4735, org.gradle.logging.internal.JavaUtilLoggingConfigurer@7f301d8d]
+11:45:11.719 [DEBUG] [org.gradle.configuration.project.BuildScriptProcessor] Timing: Running the build script took 1.413 secs
+11:45:11.726 [INFO] [org.gradle.BuildLogger] All projects evaluated.
+11:45:11.737 [DEBUG] [org.gradle.execution.taskgraph.DefaultTaskGraphExecuter] Timing: Creating the DAG took 0.004 secs
+11:45:11.738 [INFO] [org.gradle.execution.TaskNameResolvingBuildConfigurationAction] Selected primary task 'site'
+11:45:11.739 [INFO] [org.gradle.BuildLogger] Tasks to be executed: [task ':site']
+11:45:11.741 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on task artifact state cache (C:\Project\gradle\sampleGradleJavaProject\.gradle\1.8\taskArtifacts).
+11:45:11.742 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+11:45:11.749 [INFO] [org.gradle.execution.taskgraph.AbstractTaskPlanExecutor] :site (Thread[main,5,main]) started.
+11:45:11.749 [LIFECYCLE] [org.gradle.TaskExecutionLogger] :site
+11:45:11.751 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Starting to execute task ':site'
+11:45:11.752 [DEBUG] [org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter] Determining if task ':site' is up-to-date
+11:45:11.754 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache taskArtifacts.bin (C:\Project\gradle\sampleGradleJavaProject\.gradle\1.8\taskArtifacts\taskArtifacts.bin)
+11:45:11.763 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache outputFileStates.bin (C:\Project\gradle\sampleGradleJavaProject\.gradle\1.8\taskArtifacts\outputFileStates.bin)
+11:45:11.784 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache fileHashes.bin (C:\Project\gradle\sampleGradleJavaProject\.gradle\1.8\taskArtifacts\fileHashes.bin)
+11:45:11.801 [INFO] [org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter] Executing task ':site' (up-to-date check took 0.047 secs) due to:
+  No history is available.
+11:45:11.801 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter] Executing actions for task ':site'.
+11:45:11.802 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@466a3728, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@674b4735, org.gradle.logging.internal.JavaUtilLoggingConfigurer@7f301d8d]
+11:45:11.802 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@466a3728, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@674b4735, org.gradle.logging.internal.JavaUtilLoggingConfigurer@7f301d8d]
+11:45:11.941 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@466a3728, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@674b4735, org.gradle.logging.internal.JavaUtilLoggingConfigurer@7f301d8d]
+11:45:11.941 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Finished executing task ':site'
+11:45:11.942 [INFO] [org.gradle.execution.taskgraph.AbstractTaskPlanExecutor] :site (Thread[main,5,main]) completed. Took 0.193 secs.
+11:45:11.942 [DEBUG] [org.gradle.execution.taskgraph.AbstractTaskPlanExecutor] Task worker [Thread[main,5,main]] finished, busy: 0.193 secs, idle: 0.006 secs
+11:45:12.008 [LIFECYCLE] [org.gradle.BuildResultLogger] 
+11:45:12.008 [LIFECYCLE] [org.gradle.BuildResultLogger] BUILD FAILED
+11:45:12.009 [LIFECYCLE] [org.gradle.BuildResultLogger] 
+11:45:12.009 [LIFECYCLE] [org.gradle.BuildResultLogger] Total time: 3.425 secs
+11:45:12.010 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache fileHashes.bin (C:\Project\gradle\sampleGradleJavaProject\.gradle\1.8\taskArtifacts\fileHashes.bin)
+11:45:12.013 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache taskArtifacts.bin (C:\Project\gradle\sampleGradleJavaProject\.gradle\1.8\taskArtifacts\taskArtifacts.bin)
+11:45:12.014 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache outputFileStates.bin (C:\Project\gradle\sampleGradleJavaProject\.gradle\1.8\taskArtifacts\outputFileStates.bin)
+11:45:12.015 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on task artifact state cache (C:\Project\gradle\sampleGradleJavaProject\.gradle\1.8\taskArtifacts).
+11:45:12.017 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for build file 'C:\Project\gradle\sampleGradleJavaProject\build.gradle' (C:\Users\chengy\.gradle\caches\1.8\scripts\build_2p1uakmvgnptmoo553i18j1hmb\ProjectScript\no_buildscript).
+11:45:12.018 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for build file 'C:\Project\gradle\sampleGradleJavaProject\build.gradle' (C:\Users\chengy\.gradle\caches\1.8\scripts\build_2p1uakmvgnptmoo553i18j1hmb\ProjectScript\buildscript).
+11:45:12.018 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-metadata.bin (C:\Users\chengy\.gradle\caches\artifacts-26\module-metadata.bin)
+11:45:12.018 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache dynamic-revisions.bin (C:\Users\chengy\.gradle\caches\artifacts-26\dynamic-revisions.bin)
+11:45:12.019 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (C:\Users\chengy\.gradle\caches\artifacts-26).
+11:45:12.024 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.memcache.InMemoryDependencyMetadataCache] In-memory dependency metadata cache closed. Repos cached: 3, cache instances: 3, modules served from cache: 0, artifacts: 0
+11:45:12.028 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolved configuration cache closed. Cache reads: 0, disk reads: 0 (avg: 0.0 secs, total: 0.0 secs)
+11:45:12.032 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolution result cache closed. Cache reads: 0, disk reads: 0 (avg: 0.0 secs, total: 0.0 secs)
+11:45:12.032 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.ResolutionResultsStoreFactory] Deleted 2 resolution results binary files in 0.007 secs
+11:45:12.034 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@466a3728, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@674b4735, org.gradle.logging.internal.JavaUtilLoggingConfigurer@7f301d8d]

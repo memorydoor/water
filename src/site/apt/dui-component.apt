@@ -1,0 +1,546 @@
+    ------
+    Discovery UI Components
+    ------
+    Jonathan Baker
+    ------
+    2012-07-25
+    ------
+
+Discovery UI Components
+
+    This page describes the components of the Discovery UI Web Application shown in the overall Pendragon System Diagram
+     {{{http://intranet-wiki.oclc.org/mediawiki/index.php?title\=EUS/Pendragon_Home#System_Diagram}here:}}
+
+%{toc}
+	 
+* General Request Component Diagram
+
+[images/Pendragon_components2.jpg]
+
+** View
+
+*** Purpose
+
+    Ultimately, a view is the end user's point of contact with the application. It is essentially the user interface. A view can consists of multiple modules and are referenced in the controller for the url mapping. See
+					{{{Academic}Academic Advanced Search View Below}}. A view typically includes most of the technologies listed in the Details section below.
+
+*** Details
+
+**** JSP
+
+    JSP (JavaServer Pages) is a technology that helps software developers create dynamically generated web pages based on HTML.
+    A view is essentially a JavaServer Page that may include the technologies listed below. The JavaServer Pages is extended further
+    through the JavaServer Standard Tag Library (JSTL) by adding a tag library of JSP tags for common tasks, such as XML data processing,
+    conditional execution, loops and internationalization. The JSP specification also supports Expression Language (EL), which is used to
+    access data and functions in Java Objects.
+
+    For example, the code below accesses the name variable in the institution object:
+
++------+
+
+<html>
+.
+.
+.
+   <h1\>${institution.name}</h1>
+
+</html>
+
++------+
+
+    You can see an implementation of the academic landing page jsp {{{http://qualityap04qxdu.dev.oclc.org:15000/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/webapp/WEB-INF/views/academic/landingPage.jsp?hb\=true}here}}
+
+**** JS
+
+    JavaScript (sometimes abbreviated JS) is the native scripting language to the browser. JavaScript is dynamic, weakly
+    typed and has first-class functions. It is also a multi-paradigm language, supporting object-oriented, imperative, and
+    functional programming styles. In typical web applications, JavaScript manipulates the DOM (Document Object Model) in many ways;
+    removing/adding/editing nodes, updating styles, creating animations, etc. Additionally, JavaScript is also used for event handling and AJAX.
+    However, some of these tasks can be daunting due to the different browser implementations from different vendors.
+    Therefore, we're utilizing the {{{http://jquery.com/}jQuery}} framework to facilitate the cross-browser development.
+    In addition to the jQuery framework, we are also refactoring our javascript to utilize a modular system. This will allow us to fully test our Javascript utilizing
+    the Jasmine test framework. An example of a Javascript module is {{{http://qualityap04qxdu.dev.oclc.org:15000/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/webapp/resources/js/module/sliding-panel.js}here}}.
+    The corresponding Jasmine test suite is {{{http://qualityap04qxdu.dev.oclc.org:15000/browse/DiscoveryUI/trunk/discoveryui-webapp/src/test/javascript/module/sliding-panel-tests.js}here}}.
+    Refer to the Pendragon Developers Guide for best practices {{{/wiki/PendragonDevelopersGuide#Client-side_Event_Guidelines}here}}.
+
+    The JavaScript {{{discoveryui-webapp/jsdoc/index.html}jsdoc component documentation}} is also available.
+
+***** jQuery
+
+    jQuery is a fast, concise and extensible JavaScript Library that simplifies HTML document traversing, event handling,
+    animating, and Ajax interactions for rapid web development. The size of the library is rather negligible (32KB, Minified and Gzipped).
+
+**** HTML5
+
+
+    Although the name might be misleading, HTML5 is an umbrella of related technologies. In other words, HTML5 does not
+    only include the HTML specification. It includes other specifications as well such as a much more semantic definition
+    of the markup (HTML), JavaScript, CSS3. Here is a link to {{{http://www.w3.org/html/logo/#the-technology}The Modules of HTML5}}.
+
+    In Pendragon, the most used features of HTML5 are the new semantic HTML tags and CSS3. In one case, we're making use
+    of the JavaScript Geolocation module in dotorg. Sample code can be found {{{http://qualityap04qxdu.dev.oclc.org:15000/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/webapp/resources/js/experimental/change_location.js?hb\=true}here}}.
+
+**** CSS
+
+    CSS (Cascading Style Sheets) is the native style sheet language used for describing the presentation (the look and formatting)
+    of a web page written in HTML in the browser. Styles are typically included in their own files indicated with .css extension.
+    They are then included in the sitemesh layout file (layout.jsp) to separate structure from content. This separation can
+    improve content accessibility, provide more flexibility and control in the presentation, enable multiple pages to share
+    formatting, and reduce complexity and repetition in the structural content.
+
+    NOTE: Typically, all the css files are aggregated and minified into 1 file to be included in the sitemesh layout.
+
+**** TagLibs
+
+    Taglibs are custom component tag template libraries for JSP development reuse. Spring includes a bunch of taglibs that
+    are available for use. All that needs to be done in order to utilize them is to reference the taglib in the JSP page/view.
+    Here is an example of how to include the spring taglib:
+
++------+
+
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %\>
+
++------+
+
+    This code sample actually makes use of the spring taglib:
+
++------+
+
+<spring:message var="defaultTitle" code="application.title.default" \>
+
++------+
+
+    Parameters can be passed to a taglib like this:
+
++------+
+
+<tags:persistent-bib record="${record}"/>
+
++------+
+
+    Check out a sample custom taglib definition {{{http://qualityap04qxdu.dev.oclc.org:15000/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/webapp/WEB-INF/tlds/discoveryui.tld?hb\=true}here}}.
+
+    The {{{http://fisheye.dev.oclc.org/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/webapp/WEB-INF/tags/persistent-bib.tag?hb\=true}persistent-bib}} taglib from the example above is also very useful.
+
+**** Translation
+
+    Translation of elements is important for a site that is used internationally. DiscoveryUI primarily utilizes a message bundle that elements access to get their values. The message bundles use the current locale set
+    in as part of the url in order to decide which message bundle to use. Users can select the language at the bottom of each page.
+
+** Controller
+
+***Purpose
+
+    A controller is the link between a user and the system. It accepts the users input and works with other lower level
+    business logic and services to perform a task or action. It provides means for user output by receiving the appropriate
+    models and translating lower level responses into the appropriate messages and passing this info on to one or more of the views.
+
+*** Details
+
+    * {{{http://fisheye.dev.oclc.org/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/java/org/oclc/discoveryui/controllers}Controllers are found here:}}
+
+    []
+
+** Model
+
+*** Purpose
+
+    Models represent knowledge. A model could be a single object (rather uninteresting), or it could be some structure of objects.
+
+    There should be a one-to-one correspondence between the model and its parts on the one hand, and the represented world as
+    perceived by the owner of the model on the other hand.
+
+*** Details
+
+    * {{{http://fisheye.dev.oclc.org/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/java/org/oclc/discoveryui/models}Java Models are found here:}}
+
+    * {{{http://fisheye.dev.oclc.org/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/groovy/org/oclc/discoveryui/models}Groovy Models are found here:}}
+
+    []
+
+** Builder
+
+*** Purpose
+
+    Builders contain business logic, and builds model objects like those a controller might build. A builder works with
+    lower level services (such as an ESL) to encapsulate functionality so it may be shared among multiple higher level
+    components, such as two controllers that need to share common business logic.
+
+*** Details
+
+    * {{{http://fisheye.dev.oclc.org/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/java/org/oclc/discoveryui/builders}Java builders are found here:}}
+
+    * There are no known Groovy builders at the time this section was added.
+
+    []
+
+** ESL
+
+*** Purpose
+
+    The ESL (Extended Service Library) is the application's API to a service. In general, the ESL provides application
+    specific functionality such as caching, or domain business logic, and can be thought of as a Facade to ease communication
+    between the Controller and the more generalized SAL.
+
+*** Details
+
+    ESLs often make use of "Extended" domain objects. These objects are typically groovy delegates that provide app specific
+    methods and fields used to supplement the raw domain objects provided by the underlying service.
+    The ESL is where caching mainly takes place. See the Multi-Level Cache description section below for info on how caching is used in the ESL.
+
+    * {{{http://fisheye.dev.oclc.org/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/java/org/oclc/discoveryui/esl}ESLs are found here:}}
+
+    []
+
+** SAL
+
+*** Purpose
+
+    A Service Access Library (SAL) is a client library that provides a simple and straight forward java api for calling a service.
+    The sal should hide all of the complexity of making connections and formatting requests/responses to and from the service.
+
+*** Details
+
+    While working on our Spring MVC rest-ful services, we discovered that the Spring MVC annotations contained all of the
+    information we would need if we were writing a client to our service.  We therefore created a maven plugin that can parse
+    those annotations and automatically generate the SAL code to connect to a given service.
+
+    * Documentation for the maven plugin we use to generate SALs for Spring MVC controllers lives {{{http://linuxiweb.dev.oclc.org/\~fna_ci/projects/spring-rest-service-client-generator/}here}}
+
+    []
+
+* Themes/Applications
+
+[images/Pendragon_components1.jpg]
+
+    The DiscoveryUI web app is broken down into different logical "themes" or "applications" that have distinct functionality.
+
+** Academic
+
+*** Purpose
+
+    The purpose of the Academic theme is to provide a library (staff and patron)interface for discovery. (This is planned to be an eventual replacement for Worldcat Local and FirstSearch.)
+
+*** Details
+
+    * URL pattern:   \{registryID | wclPrefix\}.\{hostname\}/\*
+
+    * Landing Page:  \{registryID | wclPrefix\}.\{hostname\}/discovery
+
+    * Example URL: {{{http://osu.discoveryui.ent.oclc.org/advancedsearch}http://osu.discoveryui.ent.oclc.org/advancedsearch}}
+
+    []
+
+    Since the application uses SpringMVC annotations for controller mapping, you can look at the individual controllers to find what url it is mapped to as well as the return string to know what view name it will resolve to:
+    For example:
+
++------+
+ AcademicSearchPageController.java
+  ...
+  @RequestMapping("/advancedsearch")
+  public String displaySearchPage(Model model) {
+    ...
+    return "searchPage";
+  }
++------+
+
+    * {{{http://linuxiweb.dev.oclc.org/\~fna_ci/projects/DiscoveryUI/discoveryui-webapp/apidocs/index.html}javaDoc located Here:}}
+
+    * {{{http://fisheye.dev.oclc.org/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/webapp/WEB-INF/views/academic}Academic Theme Views are found here:}}
+
+    * {{{http://fisheye.dev.oclc.org/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/java/org/oclc/discoveryui/controllers/academic}Academic Theme Controllers are found here:}}
+
+    * {{{http://fisheye.dev.oclc.org/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/java/org/oclc/discoveryui/esl}ESLs are found here:}}
+
+    * {{{http://intranet-wiki.oclc.org/wiki/Discovery_Services#discovery-services-.2A-client}SALs are typically provided by the Service that is being accessed. For example the Discovery Services SALs are described here:}}
+
+    * {{{http://fisheye.dev.oclc.org/browse/DiscoveryUI/trunk/elink-sal/src/main/java/org/oclc/elink/client}If no SAL is provided, then sometimes a SAL is created in the project. For example the ELink SAL is located in its own module of DUI here:}}
+
+    * {{{http://fisheye.dev.oclc.org/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/java/org/oclc/discoveryui/models}Java Models are found here:}}
+
+    * {{{http://fisheye.dev.oclc.org/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/groovy/org/oclc/discoveryui/models}Groovy Models are found here:}}
+
+    []
+
+** ILR
+
+*** Purpose
+
+    The purpose of the ILR theme is to provide a specialized "product specific" interface for discovery. (This one is specific to the Integrated Link Resolver).
+
+*** Details
+
+    * URL pattern:   \{registryID|wclPrefix\}\{hostname\}/\*
+
+    * Landing Page:  \{registryID|wclPrefix\}\{hostname\}/atoztitles
+
+    * Example URL: {{{http://osu.discoveryui.ent.oclc.org/atoztitles}http://osu.discoveryui.ent.oclc.org/atoztitles}}
+
+    []
+
+    Since the application uses SpringMVC annotations for controller mapping, looking at the individual controllers to find what url it is mapped to:
+    For example:
+
++------+
+ ...
+ @RequestMapping("/atoztitles")
+ public class ILRSearchController {
+   ...
+   return "lman/aToZ_JournalBrowse";
+ }
++------+
+
+    * {{{http://linuxiweb.dev.oclc.org/\~fna_ci/projects/DiscoveryUI/discoveryui-webapp/apidocs/index.html}javaDoc located Here:}}
+
+    * {{{http://fisheye.dev.oclc.org/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/java/org/oclc/discoveryui/controllers/lman}ILR Theme Controllers are found here:}}
+
+    * {{{http://fisheye.dev.oclc.org/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/webapp/WEB-INF/views/lman}ILR Theme Views are found here:}}
+
+    * {{{http://fisheye.dev.oclc.org/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/java/org/oclc/discoveryui/esl}ESLs are found here:}}
+
+    * {{{http://intranet-wiki.oclc.org/wiki/Discovery_Services#discovery-services-.2A-client}SALs are typically provided by the Service that is being accessed. For example the Discovery Services SALs are described here:}}
+
+    * {{{http://fisheye.dev.oclc.org/browse/DiscoveryUI/trunk/elink-sal/src/main/java/org/oclc/elink/client}If no SAL is provided, then sometimes a SAL is created in the project. For example the ELink SAL is located in its own module of DUI here:}}
+
+    * {{{http://fisheye.dev.oclc.org/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/java/org/oclc/discoveryui/models}Java Models are found here:}}
+
+    * {{{http://fisheye.dev.oclc.org/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/groovy/org/oclc/discoveryui/models}Groovy Models are found here:}}
+
+    []
+
+** DotOrg
+
+*** Purpose
+
+    The purpose of the DotOrg theme is to provide a consumer interface for discovery. (This is planned to be an eventual replacement for www.worldcat.org)
+
+*** Details
+
+    Note: This product is not currently under development.
+
+    * URL pattern:   \{hostname\}/experimental/\*
+
+    * Landing Page:  \{hostname\}/experimental/search
+
+    * Example: {{{http://discoveryui.ent.oclc.org/experimental/search}http://discoveryui.ent.oclc.org/experimental/search}}
+
+    * {{{http://linuxiweb.dev.oclc.org/\~fna_ci/projects/DiscoveryUI/discoveryui-webapp/apidocs/index.html}javaDoc located Here:}}
+
+    * {{{http://fisheye.dev.oclc.org/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/java/org/oclc/discoveryui/controllers/experimental}DotOrg Theme Controllers are found here:}}
+
+    * {{{http://fisheye.dev.oclc.org/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/webapp/WEB-INF/views/experimental}DotOrg Theme Views are found here:}}
+
+    * {{{http://fisheye.dev.oclc.org/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/java/org/oclc/discoveryui/esl}ESLs are found here:}}
+
+    * {{{http://intranet-wiki.oclc.org/wiki/Discovery_Services#discovery-services-.2A-client}SALs are typically provided by the Service that is being accessed. For example the Discovery Services SALs are described here:}}
+
+    * {{{http://fisheye.dev.oclc.org/browse/DiscoveryUI/trunk/elink-sal/src/main/java/org/oclc/elink/client}If no SAL is provided, then sometimes a SAL is created in the project. For example the ELink SAL is located in its own module of DUI here:}}
+
+    * {{{http://fisheye.dev.oclc.org/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/java/org/oclc/discoveryui/models}Java Models are found here:}}
+
+    * {{{http://fisheye.dev.oclc.org/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/groovy/org/oclc/discoveryui/models}Groovy Models are found here:}}
+
+    []
+
+* Technologies
+
+** {{{http://static.springsource.org/spring/docs/current/spring-framework-reference/htmlsingle/spring-framework-reference.html#mvc}SpringMVC}}
+
+*** Purpose
+
+    Spring MVC provides a framework that will essentially map url requests to method calls in special classes called controllers.  These controller classes can run business logic and then return a view name.  (a view name is essentially the name of a jsp)  What is nice about this framework is that it hides all of the complexities of handling Http requests.  As a developer I just need to write a class with a method, and tell Spring what url should map to that method.  I can give that method strongly-typed parameters and Spring will do all of the work of getting those parameters out of the http request for me.  That method can just return a string of the jsp name, and Spring will do all of the work of getting the jsp and rendering the page.
+
+*** Details
+
+    Each theme has its own specific controllers.  You can find them all {{{http://qualityap04qxdu.dev.oclc.org:15000/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/java/org/oclc/discoveryui/controllers?r\=HEAD}here}}
+
+    A controller is simply a java class marked with an @Controller annotation.  You tell Spring which urls map to methods by adding an @RequestMapping annotation to the method.  Most (if not all) of these methods simply return a string.  This string is the view name we want Spring to render.
+
+    You can see the views for each theme {{{http://qualityap04qxdu.dev.oclc.org:15000/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/java/org/oclc/discoveryui/controllers?r\=HEAD}here}}
+
+** {{{http://static.springsource.org/spring-security/site/}Spring Security}} and IDM
+
+*** Purpose
+
+    EIDM stands for Enterprise IDentity Management. It is the OCLC implementation of identity management. It will provide the means to Authenticate and Authorize as user as well as store and access user metadata.
+
+*** Details
+
+    Our actual security implementation will be provided by OCLC's {{{http://intranet-wiki.oclc.org/wiki/Enterprise_IDM}EIDM}}.
+    However the discoveryui was coded against spring security interfaces to reduce our coupling to an in-house developed volatile piece of software.
+    Spring security is configured with xml configuration using the spring security namespace.  You can see the
+    discoveryui file {{{http://qualityap04qxdu.dev.oclc.org:15000/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/webapp/WEB-INF/springmvc-security.xml?r\=HEAD&r\=HEAD}here}}.
+    This file contains which urls should bypass spring security (for example, static resources) and which classes to use to implement the spring security interfaces.
+
+    As far as protecting access to individual urls, we decided that since the urls live within the controller clases
+    (inside @RequestMapping annotations) that the security should live inside of the controllers as well.  We accomplish
+    this using the supported annotations for restricting access (such as @Secured)  This puts the security as close to
+    the definition of the url as possible.
+
+[images/IDM_SpringSecurityComponents.jpg]EIDM Spring Security Integration Components
+
+**** Links of Interest
+
+    * The jira where the design of the integration of Spring Security and EIDM can be found {{{https://jira.oclc.org/browse/WLDIS-11547}here}}.
+
+    * The Spring Security - EIDM integration was described in the powerpoint doc located {{{https://central.oa.oclc.org/products/GE/EU/Discovery%20Framework%20and%20Architecture/EIDM-Spring%20Security%20integration.pptx}here}}
+
+    * The Spring Security - EIDM integration diagram has been updated due to the implementation of IP-authentication/IP-spoofing. Updated design is located at {{{https://central.oa.oclc.org/products/GE/EU/Cornerstone/IpAuthenticationInPendragon.docx}here}}
+
+    * The code that was written by FNA to implement the integration is most easily seen in this {{{http://qualityap04qxdu.dev.oclc.org:15000/cru/Pendragon-14}code review}}
+
+    * EIDM took some of the FNA changes and integrated them into an EIDM supported library.  The documentation of which can be found {{{http://intranet-wiki.oclc.org/wiki/EIDM_Spring_Security}here}}
+
+    []
+
+** {{{http://static.springsource.org/spring-security/site/}Spring Security}} and Annotations
+
+*** Purpose
+
+    Spring Security provides annotations for controlling access to certain portions of your application, or even filtering certain
+    data elements within your application.
+
+*** Details
+
+    For example, we have added the following annotation:
+
++-----+
+@PreAuthorize("hasPermission(#queryObject, 'CAN_SEARCH_RESTRICTED_COLLECTIONS')")
++-----+
+
+    to a SearchController method that accepts a queryObject parameter with the intent of preventing unauthorized users from
+    executing searches against "restricted access" databases.
+
+    In order to support one of @PreAuthorize's arguments, "hasPermission", we have developed an implementation of
+    Spring's PermissionEvaluator interface.  Our implementation is configured with a list of objects implementing a
+    PermissionStrategy interface of Pendragon design.  Each PermissionStrategy implementation identifies the permission to which
+    it applies,  and contains a method to be called to evaluate if a given user (specified by an Authentication object) has the
+    named permission.  If the permission is held, access to the method is granted, and the search continues.  If access is denied,
+    an Exception is thrown (by Spring), which causes the invocation (again, by Spring) of an DuiAccessDeniedHandler or
+    an AuthenticationEntryPoint, here it is RestrictedResultsEntryPoint. This in turn directs the user to a page of options
+    for logging in or performing a query that they do have the permissions to perform.
+
+    Custom PermissionEvaluator can also be used in jsp-views for access control, for example:
+
++-----+
+<security:authorize access="hasPermission('', 'CAN_ACCESS_MARC')">
+    //present View MARC record link
+</security:authorize>
++-----+
+
+
+** {{{http://wiki.sitemesh.org/display/sitemesh/Home}SiteMesh}}
+
+*** Purpose
+
+    In general, most web applications have standard web page layouts that they want to enforce throughout the entire application.
+    DiscoveryUI is no different.  We use SiteMesh to accomplish this.  It is a technology that allows us to define a layout for pages
+    within the application (i.e. a header section, a footer section, navigation on the right side, etc.)
+    Once the layout is defined, we can assign any given page to a certian layout (usually with url mapping).
+    Sitemesh does all of the work of inserting the requested page into the specified layout.
+
+*** Details
+
+    SiteMesh itself is configured using sitemesh.xml.  Which can be found in the discoveryui project {{{http://qualityap04qxdu.dev.oclc.org:15000/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/webapp/WEB-INF/sitemesh.xml?r\=HEAD}here}}.
+    This file contains things like which decorators exist.
+
+    Each theme currently has its own decorators and layout definitions.  You can see the current set {{{http://qualityap04qxdu.dev.oclc.org:15000/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/webapp/WEB-INF/decorators}here}}
+
+    For a given theme two primary files exist, decorators.xml and layout.jsp.
+
+    The decorators.xml file defines the mapping between requested urls and layout files.  In our application, each theme only has one layout,
+    so this file primarily lists the urls to which we should apply that layout.  You can see the academic decorators.xml {{{http://qualityap04qxdu.dev.oclc.org:15000/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/webapp/WEB-INF/decorators/academic/decorators.xml?r\=HEAD}here}}
+
+	The layout.jsp is a jsp page that actually defines the structure of the page (i.e. including header at the top, footer at the bottom, etc.)
+	We use sitemesh custom tags to mark where included content (i.e. the requested page) should live within the layout.
+	You can see the academic layout.jsp {{{http://qualityap04qxdu.dev.oclc.org:15000/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/webapp/WEB-INF/decorators/academic/layout.jsp?r\=HEAD}here}}
+
+** Non-Sticky Sessions
+
+*** Purpose
+
+    We primarily want to support no-downtime installs, so that we can conceivably install during the daytime and reduce user impacted maintenance windows.
+    One of the contributing factors to this goal is to not have session data living on individual servers.  If session data is abstracted
+    away from individual servers, then if host 1 goes down, a user can continue their work on host 2 without any problem.  We created a session service,
+    and as user's connect to servers we access any session information from the session service instead of the local http session.
+
+*** Details
+
+    * A document already exists describing this workflow and the Visit Object {{{http://intranet-wiki.oclc.org/wiki/Discovery_UI:_Visit_ComponentDesign}here}}
+
+    * A detailed description of the session service itself exists {{{http://intranet-wiki.oclc.org/wiki/Discovery_UI:_Session_Service}here}}
+
+    []
+
+** Multi-level Cache
+
+*** Purpose
+
+    Making service calls can be a costly operation.  Therefore for data that has high cachability (i.e. it won't change in the short-term)
+    we make use of local caches on each individual application host.  This is done very easily using an open source caching library,
+	{{{http://ehcache.org/}EHCache}}.  There are special {{{http://code.google.com/p/ehcache-spring-annotations/}spring annotations}}
+	that make integration with echcace simple (see {{{http://ehcache.org/documentation/recipes/spring-annotations}here}}).
+	However, because we don't support {{{Non-Sticky Sessions}sticky sessions}}
+	a user could bounce back and forth between multiple application servers.  The freedom can defeat the purpose of the cache,
+	because if a user does a search on host 1, but their next request goes to host 2, the cache will not be populated on that host,
+	and we will have to make another service call.  The way to alleviate this is by introducing a distributed cache.
+	We will still make use of the local cache as our first line of defense, but by adding a caching service, we can allow multiple application
+	hosts to share a cache.  Fetching data from the cache is a much less costly operation than making the full service call.
+
+*** Details
+
+    * A detailed description of the caching service itself can be found {{{http://intranet-wiki.oclc.org/wiki/Discovery_UI:_Caching_Service}here}}
+
+    []
+
+** Validation
+
+*** Purpose
+
+    The Search Query Parser uses an ANTLR grammar parser to validate a user entered search string against a set of Pendragon search rules.
+	The Database Validator uses the Database Service to validate the databases a user is trying to search against a list of
+	available database for that users intitution.
+
+*** Details
+
+    The validators are located {{{http://fisheye.dev.oclc.org/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/java/org/oclc/discoveryui}here}}
+
+** Stats
+
+*** Purpose
+
+    There are two different types of stats that we collect in Discovery UI.
+
+    * Usage/Transaction Stats - These are stats that we keep track of the actions that a user makes in our application. This is accomplished by publishing JMX Notifications to CUSP and Omniture (Site Catalyst) listeners when a user performs an action or interacts with a page.
+
+    * Monitoring Stats - These are stats that we keep track of the current state of the system. This is accomplished via JMX MBeans that are queried via ISoft and made into "Isoft Basic Stats".
+
+    []
+
+*** Details
+
+    Details about the implementation of Stats can be found {{{http://intranet-wiki.oclc.org/wiki/Pendragon_Home#Logging_.2F_Stats_.2F_Managed_Operations_.2F_Incidents_.28iSoft.2FJMX.29}here}}
+
+** Facets
+
+*** Purpose
+
+    The facets are used to limit the search results in order to narrow them down to find the results that are needed. When a facet is applied, that facet group will retain its data,
+    and all other facets will be updated. There is also a list built of all of the currently selected facets so that users can remove them as desired.
+
+*** Details
+
+    The code for the facets is located {{{http://fisheye.dev.oclc.org/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/java/org/oclc/discoveryui}in this module.}}
+
+** Action Panel
+
+*** Purpose
+    The action panel has been added as a way to minimize the bib data visible on the basic search results, but still be able
+    to click on a record and see detailed information. Javascript is used to perform the opening/closing of action panel. If
+    Javascript is not present, or if the user is on a mobile device, the user is taken to the detailed record page, which has the same
+    information, but is a separate page.
+
+*** Details
+
+    The code for the action panel is located {{{http://fisheye.dev.oclc.org/browse/DiscoveryUI/trunk/discoveryui-webapp/src/main/java/org/oclc/discoveryui}in this module.}}
+

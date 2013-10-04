@@ -1,0 +1,638 @@
+12:56:21.585 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@466a3728, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@674b4735, org.gradle.logging.internal.JavaUtilLoggingConfigurer@7f301d8d]
+12:56:22.304 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@466a3728, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@674b4735, org.gradle.logging.internal.JavaUtilLoggingConfigurer@7f301d8d]
+12:56:22.307 [INFO] [org.gradle.BuildLogger] Starting Build
+12:56:22.307 [DEBUG] [org.gradle.BuildLogger] Gradle user home: C:\Users\chengy\.gradle
+12:56:22.307 [DEBUG] [org.gradle.BuildLogger] Current dir: C:\Project\gradle\sampleGradleJavaProject
+12:56:22.308 [DEBUG] [org.gradle.BuildLogger] Settings file: null
+12:56:22.309 [DEBUG] [org.gradle.BuildLogger] Build file: null
+12:56:22.329 [DEBUG] [org.gradle.initialization.buildsrc.BuildSourceBuilder] Starting to build the build sources.
+12:56:22.330 [DEBUG] [org.gradle.initialization.buildsrc.BuildSourceBuilder] Gradle source dir does not exist. We leave.
+12:56:22.331 [DEBUG] [org.gradle.initialization.DefaultGradlePropertiesLoader] Found env project properties: []
+12:56:22.331 [DEBUG] [org.gradle.initialization.DefaultGradlePropertiesLoader] Found system project properties: []
+12:56:22.449 [DEBUG] [org.gradle.api.internal.artifacts.mvnsettings.DefaultLocalMavenRepositoryLocator] No local repository in Settings file defined. Using default path: C:\Users\chengy\.m2\repository
+12:56:22.650 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@466a3728, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@674b4735, org.gradle.logging.internal.JavaUtilLoggingConfigurer@7f301d8d]
+12:56:22.660 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@466a3728, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@674b4735, org.gradle.logging.internal.JavaUtilLoggingConfigurer@7f301d8d]
+12:56:22.661 [DEBUG] [org.gradle.initialization.ScriptEvaluatingSettingsProcessor] Timing: Processing settings took: 0.329 secs
+12:56:22.662 [INFO] [org.gradle.BuildLogger] Settings evaluated using empty settings script.
+12:56:22.743 [DEBUG] [org.gradle.initialization.ProjectPropertySettingBuildLoader] Looking for project properties from: C:\Project\gradle\sampleGradleJavaProject\gradle.properties
+12:56:22.744 [DEBUG] [org.gradle.initialization.ProjectPropertySettingBuildLoader] project property file does not exists. We continue!
+12:56:22.745 [INFO] [org.gradle.BuildLogger] Projects loaded. Root project using build file 'C:\Project\gradle\sampleGradleJavaProject\build.gradle'.
+12:56:22.745 [INFO] [org.gradle.BuildLogger] Included projects: [root project 'sampleGradleJavaProject']
+12:56:23.071 [INFO] [org.gradle.configuration.project.BuildScriptProcessor] Evaluating root project 'sampleGradleJavaProject' using build file 'C:\Project\gradle\sampleGradleJavaProject\build.gradle'.
+12:56:23.090 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on buildscript class cache for build file 'C:\Project\gradle\sampleGradleJavaProject\build.gradle' (C:\Users\chengy\.gradle\caches\1.8\scripts\build_2p1uakmvgnptmoo553i18j1hmb\ProjectScript\buildscript).
+12:56:23.090 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+12:56:23.094 [INFO] [org.gradle.cache.internal.locklistener.DefaultFileLockContentionHandler] Starting file lock listener thread.
+12:56:23.095 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryCache] Invalidating buildscript class cache for build file 'C:\Project\gradle\sampleGradleJavaProject\build.gradle' (C:\Users\chengy\.gradle\caches\1.8\scripts\build_2p1uakmvgnptmoo553i18j1hmb\ProjectScript\buildscript) as cache property source.hash has changed value.
+12:56:23.097 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for build file 'C:\Project\gradle\sampleGradleJavaProject\build.gradle' (C:\Users\chengy\.gradle\caches\1.8\scripts\build_2p1uakmvgnptmoo553i18j1hmb\ProjectScript\buildscript).
+12:56:23.098 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on buildscript class cache for build file 'C:\Project\gradle\sampleGradleJavaProject\build.gradle' (C:\Users\chengy\.gradle\caches\1.8\scripts\build_2p1uakmvgnptmoo553i18j1hmb\ProjectScript\buildscript).
+12:56:23.099 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+12:56:23.100 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryCache] Invalidating buildscript class cache for build file 'C:\Project\gradle\sampleGradleJavaProject\build.gradle' (C:\Users\chengy\.gradle\caches\1.8\scripts\build_2p1uakmvgnptmoo553i18j1hmb\ProjectScript\buildscript) as cache property source.hash has changed value.
+12:56:23.109 [INFO] [org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler] Compiling build file 'C:\Project\gradle\sampleGradleJavaProject\build.gradle' using BuildScriptClasspathScriptTransformer.
+12:56:24.182 [DEBUG] [org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler] Timing: Writing script to cache at C:\Users\chengy\.gradle\caches\1.8\scripts\build_2p1uakmvgnptmoo553i18j1hmb\ProjectScript\buildscript\classes took: 1.076 secs
+12:56:24.196 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for build file 'C:\Project\gradle\sampleGradleJavaProject\build.gradle' (C:\Users\chengy\.gradle\caches\1.8\scripts\build_2p1uakmvgnptmoo553i18j1hmb\ProjectScript\buildscript).
+12:56:24.199 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on buildscript class cache for build file 'C:\Project\gradle\sampleGradleJavaProject\build.gradle' (C:\Users\chengy\.gradle\caches\1.8\scripts\build_2p1uakmvgnptmoo553i18j1hmb\ProjectScript\buildscript).
+12:56:24.199 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+12:56:24.285 [DEBUG] [org.gradle.api.internal.artifacts.mvnsettings.DefaultLocalMavenRepositoryLocator] No local repository in Settings file defined. Using default path: C:\Users\chengy\.m2\repository
+12:56:24.361 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@466a3728, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@674b4735, org.gradle.logging.internal.JavaUtilLoggingConfigurer@7f301d8d]
+12:56:24.363 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on artifact cache (C:\Users\chengy\.gradle\caches\artifacts-26).
+12:56:24.364 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+12:56:24.365 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultDependencyResolver] Resolving configuration ':classpath'
+12:56:24.380 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.default.settings.dir' to 'jar:file:/C:/gradle-1.8/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings'
+12:56:24.382 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.basedir' to 'C:\Project\gradle\sampleGradleJavaProject\.'
+12:56:24.383 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.default.conf.dir' to 'jar:file:/C:/gradle-1.8/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings'
+12:56:24.409 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.runtime.name' to 'Java(TM) SE Runtime Environment'
+12:56:24.410 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.boot.library.path' to 'C:\Program Files\Java\jdk1.7\jre\bin'
+12:56:24.410 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.version' to '23.25-b01'
+12:56:24.410 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.vendor' to 'Oracle Corporation'
+12:56:24.411 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vendor.url' to 'http://java.oracle.com/'
+12:56:24.411 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'path.separator' to ';'
+12:56:24.412 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.name' to 'Java HotSpot(TM) 64-Bit Server VM'
+12:56:24.412 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'file.encoding.pkg' to 'sun.io'
+12:56:24.412 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.country' to 'US'
+12:56:24.413 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.script' to ''
+12:56:24.413 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.java.launcher' to 'SUN_STANDARD'
+12:56:24.413 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.os.patch.level' to 'Service Pack 1'
+12:56:24.414 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.specification.name' to 'Java Virtual Machine Specification'
+12:56:24.414 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.dir' to 'C:\Project\gradle\sampleGradleJavaProject'
+12:56:24.414 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.runtime.version' to '1.7.0_25-b17'
+12:56:24.415 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.awt.graphicsenv' to 'sun.awt.Win32GraphicsEnvironment'
+12:56:24.415 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.endorsed.dirs' to 'C:\Program Files\Java\jdk1.7\jre\lib\endorsed'
+12:56:24.415 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'os.arch' to 'amd64'
+12:56:24.416 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.io.tmpdir' to 'C:\Users\chengy\AppData\Local\Temp\'
+12:56:24.416 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'line.separator' to '
+'
+12:56:24.416 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'org.gradle.appname' to 'gradle'
+12:56:24.417 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.specification.vendor' to 'Oracle Corporation'
+12:56:24.417 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.variant' to ''
+12:56:24.418 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'os.name' to 'Windows 7'
+12:56:24.418 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'jna.boot.library.path' to 'C:\Users\chengy\.gradle\native\jna\win32-amd64'
+12:56:24.418 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.jnu.encoding' to 'Cp1252'
+12:56:24.419 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.library.path' to 'C:\Program Files\Java\jdk1.7\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;\ C:\Windows\System32\WindowsPowerShell\v1.0\; C:\Program Files (x86)\;C:\Program Files\CollabNet\Subversion Client;C:\Program Files\Java\jdk1.7\bin;C:\Project\Pendragon\apache-tomcat-6.0.36\bin;C:\Project\Pendragon\apache-maven-3.0.5\bin;C:\Project\Pendragon\apache-ant-1.9.2\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\sbt\bin;C:\Program Files\TortoiseSVN\bin;C:\gradle-1.8\bin;.'
+12:56:24.419 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.class.version' to '51.0'
+12:56:24.419 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.specification.name' to 'Java Platform API Specification'
+12:56:24.420 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.management.compiler' to 'HotSpot 64-Bit Tiered Compilers'
+12:56:24.420 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'os.version' to '6.1'
+12:56:24.420 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.home' to 'C:\Users\chengy'
+12:56:24.421 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.timezone' to 'America/New_York'
+12:56:24.421 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.awt.printerjob' to 'sun.awt.windows.WPrinterJob'
+12:56:24.421 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.specification.version' to '1.7'
+12:56:24.422 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'file.encoding' to 'Cp1252'
+12:56:24.422 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.name' to 'chengy'
+12:56:24.423 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.class.path' to 'C:\gradle-1.8\bin\..\lib\gradle-launcher-1.8.jar'
+12:56:24.423 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.specification.version' to '1.7'
+12:56:24.423 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.arch.data.model' to '64'
+12:56:24.424 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.java.command' to 'org.gradle.launcher.GradleMain site --debug'
+12:56:24.424 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.home' to 'C:\Program Files\Java\jdk1.7\jre'
+12:56:24.424 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.specification.vendor' to 'Oracle Corporation'
+12:56:24.425 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.language' to 'en'
+12:56:24.425 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'awt.toolkit' to 'sun.awt.windows.WToolkit'
+12:56:24.426 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.info' to 'mixed mode'
+12:56:24.426 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.version' to '1.7.0_25'
+12:56:24.426 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.ext.dirs' to 'C:\Program Files\Java\jdk1.7\jre\lib\ext;C:\Windows\Sun\Java\lib\ext'
+12:56:24.427 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.boot.class.path' to 'C:\Program Files\Java\jdk1.7\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7\jre\classes'
+12:56:24.427 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vendor' to 'Oracle Corporation'
+12:56:24.428 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'file.separator' to '\'
+12:56:24.428 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vendor.url.bug' to 'http://bugreport.sun.com/bugreport/'
+12:56:24.428 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.io.unicode.encoding' to 'UnicodeLittle'
+12:56:24.429 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.cpu.endian' to 'little'
+12:56:24.429 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.desktop' to 'windows'
+12:56:24.429 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.cpu.isalist' to 'amd64'
+12:56:24.463 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.memcache.InMemoryDependencyMetadataCache] Creating new in-memory cache for repo 'MavenLocal' [967ceb0b4ac5e720b1a010fd9109f2e4].
+12:56:24.498 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.memcache.InMemoryDependencyMetadataCache] Creating new in-memory cache for repo 'maven' [5a11901a62f2f651c8821577534efb04].
+12:56:24.500 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.memcache.InMemoryDependencyMetadataCache] Creating new in-memory cache for repo 'maven2' [63a50baccf27c44de3fee3d51f06c882].
+12:56:24.552 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration :sampleGradleJavaProject:unspecified(classpath).
+12:56:24.558 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency :sampleGradleJavaProject:unspecified(classpath) -> com.breskeby:GradleSite:0.1-SNAPSHOT(dependency: com.breskeby#GradleSite;0.1-SNAPSHOT {classpath=[default]})
+12:56:24.560 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version com.breskeby:GradleSite:0.1-SNAPSHOT
+12:56:24.560 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'com.breskeby:GradleSite:0.1-SNAPSHOT' using repositories [MavenLocal, maven, maven2]
+12:56:24.563 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/com/breskeby/GradleSite/0.1-SNAPSHOT/GradleSite-0.1-SNAPSHOT.pom
+12:56:24.622 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'com.breskeby#GradleSite;0.1-SNAPSHOT' in repository 'MavenLocal'.
+12:56:24.623 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'com.breskeby:GradleSite:0.1-SNAPSHOT' from repository 'MavenLocal'
+12:56:24.625 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency :sampleGradleJavaProject:unspecified(classpath) -> org.apache.maven.doxia:doxia-module-apt:1.2(dependency: org.apache.maven.doxia#doxia-module-apt;1.2 {classpath=[default]})
+12:56:24.625 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version org.apache.maven.doxia:doxia-module-apt:1.2
+12:56:24.625 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache.maven.doxia:doxia-module-apt:1.2' using repositories [MavenLocal, maven, maven2]
+12:56:24.626 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/maven/doxia/doxia-module-apt/1.2/doxia-module-apt-1.2.pom
+12:56:24.636 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache.maven.doxia:doxia-modules:1.2' using repositories [MavenLocal, maven, maven2]
+12:56:24.637 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/maven/doxia/doxia-modules/1.2/doxia-modules-1.2.pom
+12:56:24.646 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache.maven.doxia:doxia:1.2' using repositories [MavenLocal, maven, maven2]
+12:56:24.646 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/maven/doxia/doxia/1.2/doxia-1.2.pom
+12:56:24.665 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache.maven:maven-parent:19' using repositories [MavenLocal, maven, maven2]
+12:56:24.665 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/maven/maven-parent/19/maven-parent-19.pom
+12:56:24.690 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache:apache:9' using repositories [MavenLocal, maven, maven2]
+12:56:24.691 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/apache/9/apache-9.pom
+12:56:24.702 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/apache/9/apache-9.jar
+12:56:24.704 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Resource not reachable for org.apache:apache:9: res=MissingResource: C:\Users\chengy\.m2\repository/org/apache/apache/9/apache-9.jar
+12:56:24.705 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'org.apache#apache;9' in repository 'MavenLocal'.
+12:56:24.705 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.apache:apache:9' from repository 'MavenLocal'
+12:56:24.706 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/maven/maven-parent/19/maven-parent-19.jar
+12:56:24.707 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Resource not reachable for org.apache.maven:maven-parent:19: res=MissingResource: C:\Users\chengy\.m2\repository/org/apache/maven/maven-parent/19/maven-parent-19.jar
+12:56:24.707 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'org.apache.maven#maven-parent;19' in repository 'MavenLocal'.
+12:56:24.708 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.apache.maven:maven-parent:19' from repository 'MavenLocal'
+12:56:24.715 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/maven/doxia/doxia/1.2/doxia-1.2.jar
+12:56:24.715 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Resource not reachable for org.apache.maven.doxia:doxia:1.2: res=MissingResource: C:\Users\chengy\.m2\repository/org/apache/maven/doxia/doxia/1.2/doxia-1.2.jar
+12:56:24.716 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'org.apache.maven.doxia#doxia;1.2' in repository 'MavenLocal'.
+12:56:24.716 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.apache.maven.doxia:doxia:1.2' from repository 'MavenLocal'
+12:56:24.720 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/maven/doxia/doxia-modules/1.2/doxia-modules-1.2.jar
+12:56:24.720 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Resource not reachable for org.apache.maven.doxia:doxia-modules:1.2: res=MissingResource: C:\Users\chengy\.m2\repository/org/apache/maven/doxia/doxia-modules/1.2/doxia-modules-1.2.jar
+12:56:24.721 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'org.apache.maven.doxia#doxia-modules;1.2' in repository 'MavenLocal'.
+12:56:24.721 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.apache.maven.doxia:doxia-modules:1.2' from repository 'MavenLocal'
+12:56:24.723 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'org.apache.maven.doxia#doxia-module-apt;1.2' in repository 'MavenLocal'.
+12:56:24.723 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.apache.maven.doxia:doxia-module-apt:1.2' from repository 'MavenLocal'
+12:56:24.724 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency :sampleGradleJavaProject:unspecified(classpath) -> org.apache.maven.doxia:doxia-module-xhtml:1.2(dependency: org.apache.maven.doxia#doxia-module-xhtml;1.2 {classpath=[default]})
+12:56:24.724 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version org.apache.maven.doxia:doxia-module-xhtml:1.2
+12:56:24.725 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache.maven.doxia:doxia-module-xhtml:1.2' using repositories [MavenLocal, maven, maven2]
+12:56:24.725 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/maven/doxia/doxia-module-xhtml/1.2/doxia-module-xhtml-1.2.pom
+12:56:24.731 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache.maven.doxia:doxia-modules:1.2' using repositories [MavenLocal, maven, maven2]
+12:56:24.731 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.apache.maven.doxia:doxia-modules:1.2' from repository 'MavenLocal'
+12:56:24.733 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'org.apache.maven.doxia#doxia-module-xhtml;1.2' in repository 'MavenLocal'.
+12:56:24.733 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.apache.maven.doxia:doxia-module-xhtml:1.2' from repository 'MavenLocal'
+12:56:24.734 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency :sampleGradleJavaProject:unspecified(classpath) -> org.apache.commons.io:commons-io:1.4(dependency: org.apache.commons.io#commons-io;1.4 {classpath=[default]})
+12:56:24.734 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version org.apache.commons.io:commons-io:1.4
+12:56:24.735 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache.commons.io:commons-io:1.4' using repositories [MavenLocal, maven, maven2]
+12:56:24.735 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/commons/io/commons-io/1.4/commons-io-1.4.pom
+12:56:24.736 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Resource not reachable for org.apache.commons.io:commons-io:1.4: res=MissingResource: C:\Users\chengy\.m2\repository/org/apache/commons/io/commons-io/1.4/commons-io-1.4.pom
+12:56:24.737 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/commons/io/commons-io/1.4/commons-io-1.4.jar
+12:56:24.737 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Resource not reachable for org.apache.commons.io:commons-io:1.4: res=MissingResource: C:\Users\chengy\.m2\repository/org/apache/commons/io/commons-io/1.4/commons-io-1.4.jar
+12:56:24.738 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] No ivy file nor artifact found for module 'org.apache.commons.io#commons-io;1.4' in repository 'MavenLocal'.
+12:56:24.748 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache dynamic-revisions.bin (C:\Users\chengy\.gradle\caches\artifacts-26\dynamic-revisions.bin)
+12:56:24.757 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache module-metadata.bin (C:\Users\chengy\.gradle\caches\artifacts-26\module-metadata.bin)
+12:56:24.759 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading http://central.maven.org/maven2/org/codehaus/plexus/plexus-classworlds/org/apache/commons/io/commons-io/1.4/commons-io-1.4.pom
+12:56:24.759 [DEBUG] [org.gradle.api.internal.externalresource.transfer.DefaultCacheAwareExternalResourceAccessor] Constructing external resource: http://central.maven.org/maven2/org/codehaus/plexus/plexus-classworlds/org/apache/commons/io/commons-io/1.4/commons-io-1.4.pom
+12:56:24.760 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache artifact-at-url.bin (C:\Users\chengy\.gradle\caches\artifacts-26\artifact-at-url.bin)
+12:56:24.770 [DEBUG] [org.gradle.api.internal.externalresource.transport.http.HttpResourceAccessor] Constructing external resource: http://central.maven.org/maven2/org/codehaus/plexus/plexus-classworlds/org/apache/commons/io/commons-io/1.4/commons-io-1.4.pom
+12:56:24.772 [DEBUG] [org.gradle.api.internal.externalresource.transport.http.HttpClientHelper] Performing HTTP GET: http://central.maven.org/maven2/org/codehaus/plexus/plexus-classworlds/org/apache/commons/io/commons-io/1.4/commons-io-1.4.pom
+12:56:24.912 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection request: [route: {}->http://central.maven.org][total kept alive: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+12:56:24.921 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection leased: [id: 0][route: {}->http://central.maven.org][total kept alive: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+12:56:25.309 [DEBUG] [org.apache.http.impl.conn.DefaultClientConnectionOperator] Connecting to central.maven.org:80
+12:56:25.350 [DEBUG] [org.apache.http.client.protocol.RequestAddCookies] CookieSpec selected: best-match
+12:56:25.359 [DEBUG] [org.apache.http.client.protocol.RequestAuthCache] Auth cache not set in the context
+12:56:25.359 [DEBUG] [org.apache.http.client.protocol.RequestTargetAuthentication] Target auth state: UNCHALLENGED
+12:56:25.360 [DEBUG] [org.apache.http.client.protocol.RequestProxyAuthentication] Proxy auth state: UNCHALLENGED
+12:56:25.360 [DEBUG] [org.apache.http.impl.client.SystemDefaultHttpClient] Attempt 1 to execute request
+12:56:25.360 [DEBUG] [org.apache.http.impl.conn.DefaultClientConnection] Sending request: GET /maven2/org/codehaus/plexus/plexus-classworlds/org/apache/commons/io/commons-io/1.4/commons-io-1.4.pom HTTP/1.1
+12:56:25.362 [DEBUG] [org.apache.http.headers] >> GET /maven2/org/codehaus/plexus/plexus-classworlds/org/apache/commons/io/commons-io/1.4/commons-io-1.4.pom HTTP/1.1
+12:56:25.362 [DEBUG] [org.apache.http.headers] >> Accept-Encoding: gzip,deflate
+12:56:25.362 [DEBUG] [org.apache.http.headers] >> Host: central.maven.org
+12:56:25.362 [DEBUG] [org.apache.http.headers] >> Connection: Keep-Alive
+12:56:25.363 [DEBUG] [org.apache.http.headers] >> User-Agent: Gradle/1.8 (Windows 7;6.1;amd64) (Oracle Corporation;1.7.0_25;23.25-b01)
+12:56:25.468 [DEBUG] [org.apache.http.impl.conn.DefaultClientConnection] Receiving response: HTTP/1.1 404 Not Found
+12:56:25.468 [DEBUG] [org.apache.http.headers] << HTTP/1.1 404 Not Found
+12:56:25.468 [DEBUG] [org.apache.http.headers] << Server: nginx/1.2.1
+12:56:25.469 [DEBUG] [org.apache.http.headers] << Content-Type: text/html
+12:56:25.469 [DEBUG] [org.apache.http.headers] << Via: 1.1 varnish
+12:56:25.469 [DEBUG] [org.apache.http.headers] << Content-Length: 168
+12:56:25.469 [DEBUG] [org.apache.http.headers] << Accept-Ranges: bytes
+12:56:25.470 [DEBUG] [org.apache.http.headers] << Date: Wed, 02 Oct 2013 16:56:27 GMT
+12:56:25.470 [DEBUG] [org.apache.http.headers] << Via: 1.1 varnish
+12:56:25.470 [DEBUG] [org.apache.http.headers] << Age: 0
+12:56:25.471 [DEBUG] [org.apache.http.headers] << Connection: keep-alive
+12:56:25.471 [DEBUG] [org.apache.http.headers] << X-Served-By: cache-v37-ASH, cache-c48-CHI
+12:56:25.471 [DEBUG] [org.apache.http.headers] << X-Cache: MISS, MISS
+12:56:25.471 [DEBUG] [org.apache.http.headers] << X-Cache-Hits: 0, 0
+12:56:25.475 [DEBUG] [org.apache.http.impl.client.SystemDefaultHttpClient] Connection can be kept alive indefinitely
+12:56:25.478 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection [id: 0][route: {}->http://central.maven.org] can be kept alive indefinitely
+12:56:25.479 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection released: [id: 0][route: {}->http://central.maven.org][total kept alive: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+12:56:25.479 [INFO] [org.gradle.api.internal.externalresource.transport.http.HttpClientHelper] Resource missing. [HTTP GET: http://central.maven.org/maven2/org/codehaus/plexus/plexus-classworlds/org/apache/commons/io/commons-io/1.4/commons-io-1.4.pom]
+12:56:25.479 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Resource not reachable for org.apache.commons.io:commons-io:1.4: res=MissingResource: http://central.maven.org/maven2/org/codehaus/plexus/plexus-classworlds/org/apache/commons/io/commons-io/1.4/commons-io-1.4.pom
+12:56:25.479 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading http://central.maven.org/maven2/org/codehaus/plexus/plexus-classworlds/org/apache/commons/io/commons-io/1.4/commons-io-1.4.jar
+12:56:25.480 [DEBUG] [org.gradle.api.internal.externalresource.transport.http.HttpResourceAccessor] Constructing external resource metadata: http://central.maven.org/maven2/org/codehaus/plexus/plexus-classworlds/org/apache/commons/io/commons-io/1.4/commons-io-1.4.jar
+12:56:25.480 [DEBUG] [org.gradle.api.internal.externalresource.transport.http.HttpClientHelper] Performing HTTP HEAD: http://central.maven.org/maven2/org/codehaus/plexus/plexus-classworlds/org/apache/commons/io/commons-io/1.4/commons-io-1.4.jar
+12:56:25.480 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection request: [route: {}->http://central.maven.org][total kept alive: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+12:56:25.481 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection leased: [id: 0][route: {}->http://central.maven.org][total kept alive: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+12:56:25.481 [DEBUG] [org.apache.http.impl.client.SystemDefaultHttpClient] Stale connection check
+12:56:25.482 [DEBUG] [org.apache.http.client.protocol.RequestAddCookies] CookieSpec selected: best-match
+12:56:25.482 [DEBUG] [org.apache.http.client.protocol.RequestAuthCache] Auth cache not set in the context
+12:56:25.482 [DEBUG] [org.apache.http.client.protocol.RequestTargetAuthentication] Target auth state: UNCHALLENGED
+12:56:25.483 [DEBUG] [org.apache.http.client.protocol.RequestProxyAuthentication] Proxy auth state: UNCHALLENGED
+12:56:25.483 [DEBUG] [org.apache.http.impl.client.SystemDefaultHttpClient] Attempt 1 to execute request
+12:56:25.483 [DEBUG] [org.apache.http.impl.conn.DefaultClientConnection] Sending request: HEAD /maven2/org/codehaus/plexus/plexus-classworlds/org/apache/commons/io/commons-io/1.4/commons-io-1.4.jar HTTP/1.1
+12:56:25.483 [DEBUG] [org.apache.http.headers] >> HEAD /maven2/org/codehaus/plexus/plexus-classworlds/org/apache/commons/io/commons-io/1.4/commons-io-1.4.jar HTTP/1.1
+12:56:25.484 [DEBUG] [org.apache.http.headers] >> Accept-Encoding: gzip,deflate
+12:56:25.484 [DEBUG] [org.apache.http.headers] >> Host: central.maven.org
+12:56:25.484 [DEBUG] [org.apache.http.headers] >> Connection: Keep-Alive
+12:56:25.484 [DEBUG] [org.apache.http.headers] >> User-Agent: Gradle/1.8 (Windows 7;6.1;amd64) (Oracle Corporation;1.7.0_25;23.25-b01)
+12:56:25.589 [DEBUG] [org.apache.http.impl.conn.DefaultClientConnection] Receiving response: HTTP/1.1 404 Not Found
+12:56:25.590 [DEBUG] [org.apache.http.headers] << HTTP/1.1 404 Not Found
+12:56:25.590 [DEBUG] [org.apache.http.headers] << Server: nginx/1.2.1
+12:56:25.590 [DEBUG] [org.apache.http.headers] << Content-Type: text/html
+12:56:25.591 [DEBUG] [org.apache.http.headers] << Via: 1.1 varnish
+12:56:25.591 [DEBUG] [org.apache.http.headers] << Content-Length: 168
+12:56:25.591 [DEBUG] [org.apache.http.headers] << Accept-Ranges: bytes
+12:56:25.591 [DEBUG] [org.apache.http.headers] << Date: Wed, 02 Oct 2013 16:56:27 GMT
+12:56:25.592 [DEBUG] [org.apache.http.headers] << Via: 1.1 varnish
+12:56:25.592 [DEBUG] [org.apache.http.headers] << Age: 0
+12:56:25.592 [DEBUG] [org.apache.http.headers] << Connection: keep-alive
+12:56:25.592 [DEBUG] [org.apache.http.headers] << X-Served-By: cache-v43-ASH, cache-c48-CHI
+12:56:25.593 [DEBUG] [org.apache.http.headers] << X-Cache: MISS, MISS
+12:56:25.593 [DEBUG] [org.apache.http.headers] << X-Cache-Hits: 0, 0
+12:56:25.593 [DEBUG] [org.apache.http.impl.client.SystemDefaultHttpClient] Connection can be kept alive indefinitely
+12:56:25.593 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection [id: 0][route: {}->http://central.maven.org] can be kept alive indefinitely
+12:56:25.594 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection released: [id: 0][route: {}->http://central.maven.org][total kept alive: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+12:56:25.594 [INFO] [org.gradle.api.internal.externalresource.transport.http.HttpClientHelper] Resource missing. [HTTP HEAD: http://central.maven.org/maven2/org/codehaus/plexus/plexus-classworlds/org/apache/commons/io/commons-io/1.4/commons-io-1.4.jar]
+12:56:25.594 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Resource not reachable for org.apache.commons.io:commons-io:1.4: res=MissingResource: http://central.maven.org/maven2/org/codehaus/plexus/plexus-classworlds/org/apache/commons/io/commons-io/1.4/commons-io-1.4.jar
+12:56:25.594 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] No ivy file nor artifact found for module 'org.apache.commons.io#commons-io;1.4' in repository 'maven'.
+12:56:25.595 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.modulecache.DefaultModuleDescriptorCache] Recording absence of module descriptor in cache: org.apache.commons.io:commons-io:1.4 [changing = false]
+12:56:25.598 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading http://repo.maven.apache.org/maven2/org/apache/maven/doxia/org/apache/commons/io/commons-io/1.4/commons-io-1.4.pom
+12:56:25.598 [DEBUG] [org.gradle.api.internal.externalresource.transfer.DefaultCacheAwareExternalResourceAccessor] Constructing external resource: http://repo.maven.apache.org/maven2/org/apache/maven/doxia/org/apache/commons/io/commons-io/1.4/commons-io-1.4.pom
+12:56:25.599 [DEBUG] [org.gradle.api.internal.externalresource.transport.http.HttpResourceAccessor] Constructing external resource: http://repo.maven.apache.org/maven2/org/apache/maven/doxia/org/apache/commons/io/commons-io/1.4/commons-io-1.4.pom
+12:56:25.600 [DEBUG] [org.gradle.api.internal.externalresource.transport.http.HttpClientHelper] Performing HTTP GET: http://repo.maven.apache.org/maven2/org/apache/maven/doxia/org/apache/commons/io/commons-io/1.4/commons-io-1.4.pom
+12:56:25.605 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection request: [route: {}->http://repo.maven.apache.org][total kept alive: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+12:56:25.605 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection leased: [id: 1][route: {}->http://repo.maven.apache.org][total kept alive: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+12:56:25.651 [DEBUG] [org.apache.http.impl.conn.DefaultClientConnectionOperator] Connecting to repo.maven.apache.org:80
+12:56:25.672 [DEBUG] [org.apache.http.client.protocol.RequestAddCookies] CookieSpec selected: best-match
+12:56:25.672 [DEBUG] [org.apache.http.client.protocol.RequestAuthCache] Auth cache not set in the context
+12:56:25.673 [DEBUG] [org.apache.http.client.protocol.RequestTargetAuthentication] Target auth state: UNCHALLENGED
+12:56:25.673 [DEBUG] [org.apache.http.client.protocol.RequestProxyAuthentication] Proxy auth state: UNCHALLENGED
+12:56:25.673 [DEBUG] [org.apache.http.impl.client.SystemDefaultHttpClient] Attempt 1 to execute request
+12:56:25.673 [DEBUG] [org.apache.http.impl.conn.DefaultClientConnection] Sending request: GET /maven2/org/apache/maven/doxia/org/apache/commons/io/commons-io/1.4/commons-io-1.4.pom HTTP/1.1
+12:56:25.674 [DEBUG] [org.apache.http.headers] >> GET /maven2/org/apache/maven/doxia/org/apache/commons/io/commons-io/1.4/commons-io-1.4.pom HTTP/1.1
+12:56:25.674 [DEBUG] [org.apache.http.headers] >> Accept-Encoding: gzip,deflate
+12:56:25.674 [DEBUG] [org.apache.http.headers] >> Host: repo.maven.apache.org
+12:56:25.674 [DEBUG] [org.apache.http.headers] >> Connection: Keep-Alive
+12:56:25.675 [DEBUG] [org.apache.http.headers] >> User-Agent: Gradle/1.8 (Windows 7;6.1;amd64) (Oracle Corporation;1.7.0_25;23.25-b01)
+12:56:25.736 [DEBUG] [org.apache.http.impl.conn.DefaultClientConnection] Receiving response: HTTP/1.1 404 Not Found
+12:56:25.736 [DEBUG] [org.apache.http.headers] << HTTP/1.1 404 Not Found
+12:56:25.736 [DEBUG] [org.apache.http.headers] << Server: nginx/1.2.1
+12:56:25.736 [DEBUG] [org.apache.http.headers] << Content-Type: text/html
+12:56:25.737 [DEBUG] [org.apache.http.headers] << Via: 1.1 varnish
+12:56:25.737 [DEBUG] [org.apache.http.headers] << Content-Length: 168
+12:56:25.737 [DEBUG] [org.apache.http.headers] << Accept-Ranges: bytes
+12:56:25.737 [DEBUG] [org.apache.http.headers] << Date: Wed, 02 Oct 2013 16:56:27 GMT
+12:56:25.738 [DEBUG] [org.apache.http.headers] << Via: 1.1 varnish
+12:56:25.738 [DEBUG] [org.apache.http.headers] << Age: 0
+12:56:25.738 [DEBUG] [org.apache.http.headers] << Connection: keep-alive
+12:56:25.738 [DEBUG] [org.apache.http.headers] << X-Served-By: cache-v43-ASH, cache-c48-CHI
+12:56:25.738 [DEBUG] [org.apache.http.headers] << X-Cache: MISS, MISS
+12:56:25.739 [DEBUG] [org.apache.http.headers] << X-Cache-Hits: 0, 0
+12:56:25.739 [DEBUG] [org.apache.http.impl.client.SystemDefaultHttpClient] Connection can be kept alive indefinitely
+12:56:25.739 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection [id: 1][route: {}->http://repo.maven.apache.org] can be kept alive indefinitely
+12:56:25.739 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection released: [id: 1][route: {}->http://repo.maven.apache.org][total kept alive: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+12:56:25.740 [INFO] [org.gradle.api.internal.externalresource.transport.http.HttpClientHelper] Resource missing. [HTTP GET: http://repo.maven.apache.org/maven2/org/apache/maven/doxia/org/apache/commons/io/commons-io/1.4/commons-io-1.4.pom]
+12:56:25.740 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Resource not reachable for org.apache.commons.io:commons-io:1.4: res=MissingResource: http://repo.maven.apache.org/maven2/org/apache/maven/doxia/org/apache/commons/io/commons-io/1.4/commons-io-1.4.pom
+12:56:25.740 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading http://repo.maven.apache.org/maven2/org/apache/maven/doxia/org/apache/commons/io/commons-io/1.4/commons-io-1.4.jar
+12:56:25.741 [DEBUG] [org.gradle.api.internal.externalresource.transport.http.HttpResourceAccessor] Constructing external resource metadata: http://repo.maven.apache.org/maven2/org/apache/maven/doxia/org/apache/commons/io/commons-io/1.4/commons-io-1.4.jar
+12:56:25.741 [DEBUG] [org.gradle.api.internal.externalresource.transport.http.HttpClientHelper] Performing HTTP HEAD: http://repo.maven.apache.org/maven2/org/apache/maven/doxia/org/apache/commons/io/commons-io/1.4/commons-io-1.4.jar
+12:56:25.741 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection request: [route: {}->http://repo.maven.apache.org][total kept alive: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+12:56:25.741 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection leased: [id: 1][route: {}->http://repo.maven.apache.org][total kept alive: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+12:56:25.742 [DEBUG] [org.apache.http.impl.client.SystemDefaultHttpClient] Stale connection check
+12:56:25.743 [DEBUG] [org.apache.http.client.protocol.RequestAddCookies] CookieSpec selected: best-match
+12:56:25.743 [DEBUG] [org.apache.http.client.protocol.RequestAuthCache] Auth cache not set in the context
+12:56:25.743 [DEBUG] [org.apache.http.client.protocol.RequestTargetAuthentication] Target auth state: UNCHALLENGED
+12:56:25.743 [DEBUG] [org.apache.http.client.protocol.RequestProxyAuthentication] Proxy auth state: UNCHALLENGED
+12:56:25.744 [DEBUG] [org.apache.http.impl.client.SystemDefaultHttpClient] Attempt 1 to execute request
+12:56:25.744 [DEBUG] [org.apache.http.impl.conn.DefaultClientConnection] Sending request: HEAD /maven2/org/apache/maven/doxia/org/apache/commons/io/commons-io/1.4/commons-io-1.4.jar HTTP/1.1
+12:56:25.744 [DEBUG] [org.apache.http.headers] >> HEAD /maven2/org/apache/maven/doxia/org/apache/commons/io/commons-io/1.4/commons-io-1.4.jar HTTP/1.1
+12:56:25.744 [DEBUG] [org.apache.http.headers] >> Accept-Encoding: gzip,deflate
+12:56:25.745 [DEBUG] [org.apache.http.headers] >> Host: repo.maven.apache.org
+12:56:25.745 [DEBUG] [org.apache.http.headers] >> Connection: Keep-Alive
+12:56:25.745 [DEBUG] [org.apache.http.headers] >> User-Agent: Gradle/1.8 (Windows 7;6.1;amd64) (Oracle Corporation;1.7.0_25;23.25-b01)
+12:56:25.803 [DEBUG] [org.apache.http.impl.conn.DefaultClientConnection] Receiving response: HTTP/1.1 404 Not Found
+12:56:25.803 [DEBUG] [org.apache.http.headers] << HTTP/1.1 404 Not Found
+12:56:25.803 [DEBUG] [org.apache.http.headers] << Server: nginx/1.2.1
+12:56:25.804 [DEBUG] [org.apache.http.headers] << Content-Type: text/html
+12:56:25.804 [DEBUG] [org.apache.http.headers] << Via: 1.1 varnish
+12:56:25.804 [DEBUG] [org.apache.http.headers] << Content-Length: 168
+12:56:25.804 [DEBUG] [org.apache.http.headers] << Accept-Ranges: bytes
+12:56:25.805 [DEBUG] [org.apache.http.headers] << Date: Wed, 02 Oct 2013 16:56:27 GMT
+12:56:25.805 [DEBUG] [org.apache.http.headers] << Via: 1.1 varnish
+12:56:25.805 [DEBUG] [org.apache.http.headers] << Age: 0
+12:56:25.805 [DEBUG] [org.apache.http.headers] << Connection: keep-alive
+12:56:25.805 [DEBUG] [org.apache.http.headers] << X-Served-By: cache-v37-ASH, cache-c48-CHI
+12:56:25.806 [DEBUG] [org.apache.http.headers] << X-Cache: MISS, MISS
+12:56:25.806 [DEBUG] [org.apache.http.headers] << X-Cache-Hits: 0, 0
+12:56:25.806 [DEBUG] [org.apache.http.impl.client.SystemDefaultHttpClient] Connection can be kept alive indefinitely
+12:56:25.806 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection [id: 1][route: {}->http://repo.maven.apache.org] can be kept alive indefinitely
+12:56:25.807 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection released: [id: 1][route: {}->http://repo.maven.apache.org][total kept alive: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+12:56:25.807 [INFO] [org.gradle.api.internal.externalresource.transport.http.HttpClientHelper] Resource missing. [HTTP HEAD: http://repo.maven.apache.org/maven2/org/apache/maven/doxia/org/apache/commons/io/commons-io/1.4/commons-io-1.4.jar]
+12:56:25.807 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Resource not reachable for org.apache.commons.io:commons-io:1.4: res=MissingResource: http://repo.maven.apache.org/maven2/org/apache/maven/doxia/org/apache/commons/io/commons-io/1.4/commons-io-1.4.jar
+12:56:25.807 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] No ivy file nor artifact found for module 'org.apache.commons.io#commons-io;1.4' in repository 'maven2'.
+12:56:25.808 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.modulecache.DefaultModuleDescriptorCache] Recording absence of module descriptor in cache: org.apache.commons.io:commons-io:1.4 [changing = false]
+12:56:25.809 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration com.breskeby:GradleSite:0.1-SNAPSHOT(default).
+12:56:25.810 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency com.breskeby:GradleSite:0.1-SNAPSHOT(default) -> org.apache.maven.doxia:doxia-converter:1.2(dependency: org.apache.maven.doxia#doxia-converter;1.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.810 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version org.apache.maven.doxia:doxia-converter:1.2
+12:56:25.811 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache.maven.doxia:doxia-converter:1.2' using repositories [MavenLocal, maven, maven2]
+12:56:25.811 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/maven/doxia/doxia-converter/1.2/doxia-converter-1.2.pom
+12:56:25.811 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Resource not reachable for org.apache.maven.doxia:doxia-converter:1.2: res=MissingResource: C:\Users\chengy\.m2\repository/org/apache/maven/doxia/doxia-converter/1.2/doxia-converter-1.2.pom
+12:56:25.812 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/maven/doxia/doxia-converter/1.2/doxia-converter-1.2.jar
+12:56:25.816 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] No ivy file found for module 'org.apache.maven.doxia#doxia-converter;1.2' in repository 'MavenLocal', using default data instead.
+12:56:25.820 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Detected non-existence of module 'org.apache.maven.doxia#doxia-converter;1.2' in resolver cache 'maven'
+12:56:25.821 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Detected non-existence of module 'org.apache.maven.doxia#doxia-converter;1.2' in resolver cache 'maven2'
+12:56:25.821 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.apache.maven.doxia:doxia-converter:1.2' from repository 'MavenLocal'
+12:56:25.822 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.apache.maven.doxia:doxia-module-apt:1.2(default).
+12:56:25.822 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.maven.doxia:doxia-module-apt:1.2(default) -> org.codehaus.plexus:plexus-utils:2.0.5(dependency: org.codehaus.plexus#plexus-utils;2.0.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.823 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version org.codehaus.plexus:plexus-utils:2.0.5
+12:56:25.823 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.codehaus.plexus:plexus-utils:2.0.5' using repositories [MavenLocal, maven, maven2]
+12:56:25.823 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.pom
+12:56:25.829 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.codehaus.plexus:plexus:2.0.6' using repositories [MavenLocal, maven, maven2]
+12:56:25.829 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/codehaus/plexus/plexus/2.0.6/plexus-2.0.6.pom
+12:56:25.839 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/codehaus/plexus/plexus/2.0.6/plexus-2.0.6.jar
+12:56:25.840 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Resource not reachable for org.codehaus.plexus:plexus:2.0.6: res=MissingResource: C:\Users\chengy\.m2\repository/org/codehaus/plexus/plexus/2.0.6/plexus-2.0.6.jar
+12:56:25.840 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'org.codehaus.plexus#plexus;2.0.6' in repository 'MavenLocal'.
+12:56:25.840 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.codehaus.plexus:plexus:2.0.6' from repository 'MavenLocal'
+12:56:25.841 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'org.codehaus.plexus#plexus-utils;2.0.5' in repository 'MavenLocal'.
+12:56:25.841 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.codehaus.plexus:plexus-utils:2.0.5' from repository 'MavenLocal'
+12:56:25.842 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.maven.doxia:doxia-module-apt:1.2(default) -> org.apache.maven.doxia:doxia-core:1.2(dependency: org.apache.maven.doxia#doxia-core;1.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.842 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version org.apache.maven.doxia:doxia-core:1.2
+12:56:25.842 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache.maven.doxia:doxia-core:1.2' using repositories [MavenLocal, maven, maven2]
+12:56:25.843 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/maven/doxia/doxia-core/1.2/doxia-core-1.2.pom
+12:56:25.848 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache.maven.doxia:doxia:1.2' using repositories [MavenLocal, maven, maven2]
+12:56:25.849 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.apache.maven.doxia:doxia:1.2' from repository 'MavenLocal'
+12:56:25.852 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'org.apache.maven.doxia#doxia-core;1.2' in repository 'MavenLocal'.
+12:56:25.852 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.apache.maven.doxia:doxia-core:1.2' from repository 'MavenLocal'
+12:56:25.853 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.maven.doxia:doxia-module-apt:1.2(default) -> org.apache.maven.doxia:doxia-sink-api:1.2(dependency: org.apache.maven.doxia#doxia-sink-api;1.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.853 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version org.apache.maven.doxia:doxia-sink-api:1.2
+12:56:25.853 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache.maven.doxia:doxia-sink-api:1.2' using repositories [MavenLocal, maven, maven2]
+12:56:25.854 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/maven/doxia/doxia-sink-api/1.2/doxia-sink-api-1.2.pom
+12:56:25.863 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache.maven.doxia:doxia:1.2' using repositories [MavenLocal, maven, maven2]
+12:56:25.863 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.apache.maven.doxia:doxia:1.2' from repository 'MavenLocal'
+12:56:25.865 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'org.apache.maven.doxia#doxia-sink-api;1.2' in repository 'MavenLocal'.
+12:56:25.865 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.apache.maven.doxia:doxia-sink-api:1.2' from repository 'MavenLocal'
+12:56:25.866 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.apache.maven.doxia:doxia-module-xhtml:1.2(default).
+12:56:25.866 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.maven.doxia:doxia-module-xhtml:1.2(default) -> org.codehaus.plexus:plexus-utils:2.0.5(dependency: org.codehaus.plexus#plexus-utils;2.0.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.867 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.maven.doxia:doxia-module-xhtml:1.2(default) -> org.apache.maven.doxia:doxia-core:1.2(dependency: org.apache.maven.doxia#doxia-core;1.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.867 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.maven.doxia:doxia-module-xhtml:1.2(default) -> org.apache.maven.doxia:doxia-sink-api:1.2(dependency: org.apache.maven.doxia#doxia-sink-api;1.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.867 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.apache.maven.doxia:doxia-converter:1.2(default).
+12:56:25.868 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.codehaus.plexus:plexus-utils:2.0.5(compile).
+12:56:25.868 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.codehaus.plexus:plexus-utils:2.0.5(master).
+12:56:25.868 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.codehaus.plexus:plexus-utils:2.0.5(runtime).
+12:56:25.869 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.apache.maven.doxia:doxia-core:1.2(compile).
+12:56:25.869 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.maven.doxia:doxia-core:1.2(compile) -> org.apache.maven.doxia:doxia-sink-api:1.2(dependency: org.apache.maven.doxia#doxia-sink-api;1.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.870 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.maven.doxia:doxia-core:1.2(compile) -> org.apache.maven.doxia:doxia-logging-api:1.2(dependency: org.apache.maven.doxia#doxia-logging-api;1.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.870 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version org.apache.maven.doxia:doxia-logging-api:1.2
+12:56:25.870 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache.maven.doxia:doxia-logging-api:1.2' using repositories [MavenLocal, maven, maven2]
+12:56:25.870 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/maven/doxia/doxia-logging-api/1.2/doxia-logging-api-1.2.pom
+12:56:25.875 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache.maven.doxia:doxia:1.2' using repositories [MavenLocal, maven, maven2]
+12:56:25.876 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.apache.maven.doxia:doxia:1.2' from repository 'MavenLocal'
+12:56:25.877 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'org.apache.maven.doxia#doxia-logging-api;1.2' in repository 'MavenLocal'.
+12:56:25.878 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.apache.maven.doxia:doxia-logging-api:1.2' from repository 'MavenLocal'
+12:56:25.878 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.maven.doxia:doxia-core:1.2(compile) -> org.codehaus.plexus:plexus-utils:2.0.5(dependency: org.codehaus.plexus#plexus-utils;2.0.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.878 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.maven.doxia:doxia-core:1.2(compile) -> org.codehaus.plexus:plexus-container-default:1.0-alpha-30(dependency: org.codehaus.plexus#plexus-container-default;1.0-alpha-30 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.879 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version org.codehaus.plexus:plexus-container-default:1.0-alpha-30
+12:56:25.879 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.codehaus.plexus:plexus-container-default:1.0-alpha-30' using repositories [MavenLocal, maven, maven2]
+12:56:25.879 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-30/plexus-container-default-1.0-alpha-30.pom
+12:56:25.885 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.codehaus.plexus:plexus-containers:1.0-alpha-30' using repositories [MavenLocal, maven, maven2]
+12:56:25.885 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/codehaus/plexus/plexus-containers/1.0-alpha-30/plexus-containers-1.0-alpha-30.pom
+12:56:25.890 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.codehaus.plexus:plexus:1.0.11' using repositories [MavenLocal, maven, maven2]
+12:56:25.891 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/codehaus/plexus/plexus/1.0.11/plexus-1.0.11.pom
+12:56:25.898 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/codehaus/plexus/plexus/1.0.11/plexus-1.0.11.jar
+12:56:25.899 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Resource not reachable for org.codehaus.plexus:plexus:1.0.11: res=MissingResource: C:\Users\chengy\.m2\repository/org/codehaus/plexus/plexus/1.0.11/plexus-1.0.11.jar
+12:56:25.899 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'org.codehaus.plexus#plexus;1.0.11' in repository 'MavenLocal'.
+12:56:25.899 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.codehaus.plexus:plexus:1.0.11' from repository 'MavenLocal'
+12:56:25.900 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/codehaus/plexus/plexus-containers/1.0-alpha-30/plexus-containers-1.0-alpha-30.jar
+12:56:25.900 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Resource not reachable for org.codehaus.plexus:plexus-containers:1.0-alpha-30: res=MissingResource: C:\Users\chengy\.m2\repository/org/codehaus/plexus/plexus-containers/1.0-alpha-30/plexus-containers-1.0-alpha-30.jar
+12:56:25.901 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'org.codehaus.plexus#plexus-containers;1.0-alpha-30' in repository 'MavenLocal'.
+12:56:25.901 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.codehaus.plexus:plexus-containers:1.0-alpha-30' from repository 'MavenLocal'
+12:56:25.902 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'org.codehaus.plexus#plexus-container-default;1.0-alpha-30' in repository 'MavenLocal'.
+12:56:25.902 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.codehaus.plexus:plexus-container-default:1.0-alpha-30' from repository 'MavenLocal'
+12:56:25.903 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.maven.doxia:doxia-core:1.2(compile) -> xerces:xercesImpl:2.9.1(dependency: xerces#xercesImpl;2.9.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.903 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version xerces:xercesImpl:2.9.1
+12:56:25.903 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'xerces:xercesImpl:2.9.1' using repositories [MavenLocal, maven, maven2]
+12:56:25.904 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.pom
+12:56:25.909 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache:apache:4' using repositories [MavenLocal, maven, maven2]
+12:56:25.909 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/apache/4/apache-4.pom
+12:56:25.919 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/apache/4/apache-4.jar
+12:56:25.919 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Resource not reachable for org.apache:apache:4: res=MissingResource: C:\Users\chengy\.m2\repository/org/apache/apache/4/apache-4.jar
+12:56:25.920 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'org.apache#apache;4' in repository 'MavenLocal'.
+12:56:25.920 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.apache:apache:4' from repository 'MavenLocal'
+12:56:25.921 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'xerces#xercesImpl;2.9.1' in repository 'MavenLocal'.
+12:56:25.921 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'xerces:xercesImpl:2.9.1' from repository 'MavenLocal'
+12:56:25.922 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.maven.doxia:doxia-core:1.2(compile) -> commons-lang:commons-lang:2.4(dependency: commons-lang#commons-lang;2.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.922 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version commons-lang:commons-lang:2.4
+12:56:25.922 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'commons-lang:commons-lang:2.4' using repositories [MavenLocal, maven, maven2]
+12:56:25.922 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/commons-lang/commons-lang/2.4/commons-lang-2.4.pom
+12:56:25.930 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache.commons:commons-parent:9' using repositories [MavenLocal, maven, maven2]
+12:56:25.930 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/commons/commons-parent/9/commons-parent-9.pom
+12:56:25.939 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache:apache:4' using repositories [MavenLocal, maven, maven2]
+12:56:25.939 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.apache:apache:4' from repository 'MavenLocal'
+12:56:25.940 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/commons/commons-parent/9/commons-parent-9.jar
+12:56:25.940 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Resource not reachable for org.apache.commons:commons-parent:9: res=MissingResource: C:\Users\chengy\.m2\repository/org/apache/commons/commons-parent/9/commons-parent-9.jar
+12:56:25.941 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'org.apache.commons#commons-parent;9' in repository 'MavenLocal'.
+12:56:25.941 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.apache.commons:commons-parent:9' from repository 'MavenLocal'
+12:56:25.942 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'commons-lang#commons-lang;2.4' in repository 'MavenLocal'.
+12:56:25.942 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'commons-lang:commons-lang:2.4' from repository 'MavenLocal'
+12:56:25.943 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.maven.doxia:doxia-core:1.2(compile) -> org.apache.httpcomponents:httpclient:4.0.2(dependency: org.apache.httpcomponents#httpclient;4.0.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.943 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version org.apache.httpcomponents:httpclient:4.0.2
+12:56:25.943 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache.httpcomponents:httpclient:4.0.2' using repositories [MavenLocal, maven, maven2]
+12:56:25.944 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/httpcomponents/httpclient/4.0.2/httpclient-4.0.2.pom
+12:56:25.949 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache.httpcomponents:httpcomponents-client:4.0.2' using repositories [MavenLocal, maven, maven2]
+12:56:25.950 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/httpcomponents/httpcomponents-client/4.0.2/httpcomponents-client-4.0.2.pom
+12:56:25.956 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache.httpcomponents:project:4.1' using repositories [MavenLocal, maven, maven2]
+12:56:25.956 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/httpcomponents/project/4.1/project-4.1.pom
+12:56:25.964 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/httpcomponents/project/4.1/project-4.1.jar
+12:56:25.965 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Resource not reachable for org.apache.httpcomponents:project:4.1: res=MissingResource: C:\Users\chengy\.m2\repository/org/apache/httpcomponents/project/4.1/project-4.1.jar
+12:56:25.965 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'org.apache.httpcomponents#project;4.1' in repository 'MavenLocal'.
+12:56:25.965 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.apache.httpcomponents:project:4.1' from repository 'MavenLocal'
+12:56:25.966 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/httpcomponents/httpcomponents-client/4.0.2/httpcomponents-client-4.0.2.jar
+12:56:25.966 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Resource not reachable for org.apache.httpcomponents:httpcomponents-client:4.0.2: res=MissingResource: C:\Users\chengy\.m2\repository/org/apache/httpcomponents/httpcomponents-client/4.0.2/httpcomponents-client-4.0.2.jar
+12:56:25.967 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'org.apache.httpcomponents#httpcomponents-client;4.0.2' in repository 'MavenLocal'.
+12:56:25.967 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.apache.httpcomponents:httpcomponents-client:4.0.2' from repository 'MavenLocal'
+12:56:25.968 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'org.apache.httpcomponents#httpclient;4.0.2' in repository 'MavenLocal'.
+12:56:25.969 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.apache.httpcomponents:httpclient:4.0.2' from repository 'MavenLocal'
+12:56:25.969 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.apache.maven.doxia:doxia-core:1.2(master).
+12:56:25.969 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.apache.maven.doxia:doxia-core:1.2(runtime).
+12:56:25.970 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.maven.doxia:doxia-core:1.2(runtime) -> org.apache.maven.doxia:doxia-sink-api:1.2(dependency: org.apache.maven.doxia#doxia-sink-api;1.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.970 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.maven.doxia:doxia-core:1.2(runtime) -> org.apache.maven.doxia:doxia-logging-api:1.2(dependency: org.apache.maven.doxia#doxia-logging-api;1.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.971 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.maven.doxia:doxia-core:1.2(runtime) -> org.codehaus.plexus:plexus-utils:2.0.5(dependency: org.codehaus.plexus#plexus-utils;2.0.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.971 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.maven.doxia:doxia-core:1.2(runtime) -> org.codehaus.plexus:plexus-container-default:1.0-alpha-30(dependency: org.codehaus.plexus#plexus-container-default;1.0-alpha-30 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.971 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.maven.doxia:doxia-core:1.2(runtime) -> xerces:xercesImpl:2.9.1(dependency: xerces#xercesImpl;2.9.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.972 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.maven.doxia:doxia-core:1.2(runtime) -> commons-lang:commons-lang:2.4(dependency: commons-lang#commons-lang;2.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.972 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.maven.doxia:doxia-core:1.2(runtime) -> org.apache.httpcomponents:httpclient:4.0.2(dependency: org.apache.httpcomponents#httpclient;4.0.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.972 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.apache.maven.doxia:doxia-sink-api:1.2(compile).
+12:56:25.973 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.maven.doxia:doxia-sink-api:1.2(compile) -> org.apache.maven.doxia:doxia-logging-api:1.2(dependency: org.apache.maven.doxia#doxia-logging-api;1.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.973 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.apache.maven.doxia:doxia-sink-api:1.2(master).
+12:56:25.973 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.apache.maven.doxia:doxia-sink-api:1.2(runtime).
+12:56:25.974 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.maven.doxia:doxia-sink-api:1.2(runtime) -> org.apache.maven.doxia:doxia-logging-api:1.2(dependency: org.apache.maven.doxia#doxia-logging-api;1.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.974 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.apache.maven.doxia:doxia-logging-api:1.2(compile).
+12:56:25.974 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.maven.doxia:doxia-logging-api:1.2(compile) -> org.codehaus.plexus:plexus-container-default:1.0-alpha-30(dependency: org.codehaus.plexus#plexus-container-default;1.0-alpha-30 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.975 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.apache.maven.doxia:doxia-logging-api:1.2(master).
+12:56:25.975 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.codehaus.plexus:plexus-utils:2.0.5(compile).
+12:56:25.975 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Changed edges for org.codehaus.plexus:plexus-utils:2.0.5(compile) selects same versions as previous traversal. ignoring
+12:56:25.975 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.codehaus.plexus:plexus-utils:2.0.5(master).
+12:56:25.976 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Changed edges for org.codehaus.plexus:plexus-utils:2.0.5(master) selects same versions as previous traversal. ignoring
+12:56:25.976 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.codehaus.plexus:plexus-container-default:1.0-alpha-30(compile).
+12:56:25.976 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.codehaus.plexus:plexus-container-default:1.0-alpha-30(compile) -> org.codehaus.plexus:plexus-utils:1.4.5(dependency: org.codehaus.plexus#plexus-utils;1.4.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.977 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Found new conflicting module version org.codehaus.plexus:plexus-utils:1.4.5
+12:56:25.977 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.codehaus.plexus:plexus-container-default:1.0-alpha-30(compile) -> org.codehaus.plexus:plexus-classworlds:1.2-alpha-9(dependency: org.codehaus.plexus#plexus-classworlds;1.2-alpha-9 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.977 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version org.codehaus.plexus:plexus-classworlds:1.2-alpha-9
+12:56:25.978 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.codehaus.plexus:plexus-classworlds:1.2-alpha-9' using repositories [MavenLocal, maven, maven2]
+12:56:25.978 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/codehaus/plexus/plexus-classworlds/1.2-alpha-9/plexus-classworlds-1.2-alpha-9.pom
+12:56:25.982 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.codehaus.plexus:plexus:1.0.10' using repositories [MavenLocal, maven, maven2]
+12:56:25.983 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/codehaus/plexus/plexus/1.0.10/plexus-1.0.10.pom
+12:56:25.989 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/codehaus/plexus/plexus/1.0.10/plexus-1.0.10.jar
+12:56:25.989 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Resource not reachable for org.codehaus.plexus:plexus:1.0.10: res=MissingResource: C:\Users\chengy\.m2\repository/org/codehaus/plexus/plexus/1.0.10/plexus-1.0.10.jar
+12:56:25.989 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'org.codehaus.plexus#plexus;1.0.10' in repository 'MavenLocal'.
+12:56:25.990 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.codehaus.plexus:plexus:1.0.10' from repository 'MavenLocal'
+12:56:25.991 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'org.codehaus.plexus#plexus-classworlds;1.2-alpha-9' in repository 'MavenLocal'.
+12:56:25.991 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.codehaus.plexus:plexus-classworlds:1.2-alpha-9' from repository 'MavenLocal'
+12:56:25.991 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.codehaus.plexus:plexus-container-default:1.0-alpha-30(compile) -> junit:junit:3.8.1(dependency: junit#junit;3.8.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.992 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version junit:junit:3.8.1
+12:56:25.992 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'junit:junit:3.8.1' using repositories [MavenLocal, maven, maven2]
+12:56:25.992 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/junit/junit/3.8.1/junit-3.8.1.pom
+12:56:25.997 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'junit#junit;3.8.1' in repository 'MavenLocal'.
+12:56:25.997 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'junit:junit:3.8.1' from repository 'MavenLocal'
+12:56:25.997 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.codehaus.plexus:plexus-container-default:1.0-alpha-30(master).
+12:56:25.998 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration xerces:xercesImpl:2.9.1(compile).
+12:56:25.998 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency xerces:xercesImpl:2.9.1(compile) -> xml-apis:xml-apis:1.3.04(dependency: xml-apis#xml-apis;1.3.04 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:25.998 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version xml-apis:xml-apis:1.3.04
+12:56:25.999 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'xml-apis:xml-apis:1.3.04' using repositories [MavenLocal, maven, maven2]
+12:56:25.999 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.pom
+12:56:26.004 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache:apache:3' using repositories [MavenLocal, maven, maven2]
+12:56:26.004 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/apache/3/apache-3.pom
+12:56:26.009 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/apache/3/apache-3.jar
+12:56:26.009 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Resource not reachable for org.apache:apache:3: res=MissingResource: C:\Users\chengy\.m2\repository/org/apache/apache/3/apache-3.jar
+12:56:26.009 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'org.apache#apache;3' in repository 'MavenLocal'.
+12:56:26.010 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.apache:apache:3' from repository 'MavenLocal'
+12:56:26.010 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'xml-apis#xml-apis;1.3.04' in repository 'MavenLocal'.
+12:56:26.011 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'xml-apis:xml-apis:1.3.04' from repository 'MavenLocal'
+12:56:26.011 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration xerces:xercesImpl:2.9.1(master).
+12:56:26.011 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration commons-lang:commons-lang:2.4(compile).
+12:56:26.011 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration commons-lang:commons-lang:2.4(master).
+12:56:26.012 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.apache.httpcomponents:httpclient:4.0.2(compile).
+12:56:26.012 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.httpcomponents:httpclient:4.0.2(compile) -> org.apache.httpcomponents:httpcore:4.0.1(dependency: org.apache.httpcomponents#httpcore;4.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:26.012 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version org.apache.httpcomponents:httpcore:4.0.1
+12:56:26.013 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache.httpcomponents:httpcore:4.0.1' using repositories [MavenLocal, maven, maven2]
+12:56:26.013 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.pom
+12:56:26.018 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache.httpcomponents:httpcomponents-core:4.0.1' using repositories [MavenLocal, maven, maven2]
+12:56:26.018 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/httpcomponents/httpcomponents-core/4.0.1/httpcomponents-core-4.0.1.pom
+12:56:26.023 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache.httpcomponents:project:4.0' using repositories [MavenLocal, maven, maven2]
+12:56:26.024 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/httpcomponents/project/4.0/project-4.0.pom
+12:56:26.028 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/httpcomponents/project/4.0/project-4.0.jar
+12:56:26.028 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Resource not reachable for org.apache.httpcomponents:project:4.0: res=MissingResource: C:\Users\chengy\.m2\repository/org/apache/httpcomponents/project/4.0/project-4.0.jar
+12:56:26.029 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'org.apache.httpcomponents#project;4.0' in repository 'MavenLocal'.
+12:56:26.029 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.apache.httpcomponents:project:4.0' from repository 'MavenLocal'
+12:56:26.030 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/httpcomponents/httpcomponents-core/4.0.1/httpcomponents-core-4.0.1.jar
+12:56:26.030 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Resource not reachable for org.apache.httpcomponents:httpcomponents-core:4.0.1: res=MissingResource: C:\Users\chengy\.m2\repository/org/apache/httpcomponents/httpcomponents-core/4.0.1/httpcomponents-core-4.0.1.jar
+12:56:26.030 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'org.apache.httpcomponents#httpcomponents-core;4.0.1' in repository 'MavenLocal'.
+12:56:26.031 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.apache.httpcomponents:httpcomponents-core:4.0.1' from repository 'MavenLocal'
+12:56:26.031 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'org.apache.httpcomponents#httpcore;4.0.1' in repository 'MavenLocal'.
+12:56:26.032 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.apache.httpcomponents:httpcore:4.0.1' from repository 'MavenLocal'
+12:56:26.032 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.httpcomponents:httpclient:4.0.2(compile) -> commons-logging:commons-logging:1.1.1(dependency: commons-logging#commons-logging;1.1.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:26.032 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version commons-logging:commons-logging:1.1.1
+12:56:26.033 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'commons-logging:commons-logging:1.1.1' using repositories [MavenLocal, maven, maven2]
+12:56:26.033 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom
+12:56:26.039 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache.commons:commons-parent:5' using repositories [MavenLocal, maven, maven2]
+12:56:26.039 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/commons/commons-parent/5/commons-parent-5.pom
+12:56:26.051 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.apache:apache:4' using repositories [MavenLocal, maven, maven2]
+12:56:26.051 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.apache:apache:4' from repository 'MavenLocal'
+12:56:26.052 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/org/apache/commons/commons-parent/5/commons-parent-5.jar
+12:56:26.052 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Resource not reachable for org.apache.commons:commons-parent:5: res=MissingResource: C:\Users\chengy\.m2\repository/org/apache/commons/commons-parent/5/commons-parent-5.jar
+12:56:26.053 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'org.apache.commons#commons-parent;5' in repository 'MavenLocal'.
+12:56:26.053 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.apache.commons:commons-parent:5' from repository 'MavenLocal'
+12:56:26.054 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'commons-logging#commons-logging;1.1.1' in repository 'MavenLocal'.
+12:56:26.054 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'commons-logging:commons-logging:1.1.1' from repository 'MavenLocal'
+12:56:26.055 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.httpcomponents:httpclient:4.0.2(compile) -> commons-codec:commons-codec:1.3(dependency: commons-codec#commons-codec;1.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:26.055 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version commons-codec:commons-codec:1.3
+12:56:26.055 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'commons-codec:commons-codec:1.3' using repositories [MavenLocal, maven, maven2]
+12:56:26.056 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Loading C:\Users\chengy\.m2\repository/commons-codec/commons-codec/1.3/commons-codec-1.3.pom
+12:56:26.060 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] Ivy file found for module 'commons-codec#commons-codec;1.3' in repository 'MavenLocal'.
+12:56:26.061 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'commons-codec:commons-codec:1.3' from repository 'MavenLocal'
+12:56:26.061 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.apache.httpcomponents:httpclient:4.0.2(master).
+12:56:26.061 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.apache.maven.doxia:doxia-logging-api:1.2(runtime).
+12:56:26.061 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.maven.doxia:doxia-logging-api:1.2(runtime) -> org.codehaus.plexus:plexus-container-default:1.0-alpha-30(dependency: org.codehaus.plexus#plexus-container-default;1.0-alpha-30 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:26.062 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.codehaus.plexus:plexus-utils:2.0.5(runtime).
+12:56:26.062 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] version for org.codehaus.plexus:plexus-utils:2.0.5(runtime) is not selected. ignoring.
+12:56:26.062 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.codehaus.plexus:plexus-container-default:1.0-alpha-30(runtime).
+12:56:26.063 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.codehaus.plexus:plexus-container-default:1.0-alpha-30(runtime) -> org.codehaus.plexus:plexus-utils:1.4.5(dependency: org.codehaus.plexus#plexus-utils;1.4.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:26.063 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.codehaus.plexus:plexus-container-default:1.0-alpha-30(runtime) -> org.codehaus.plexus:plexus-classworlds:1.2-alpha-9(dependency: org.codehaus.plexus#plexus-classworlds;1.2-alpha-9 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:26.063 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.codehaus.plexus:plexus-container-default:1.0-alpha-30(runtime) -> junit:junit:3.8.1(dependency: junit#junit;3.8.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:26.063 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration xerces:xercesImpl:2.9.1(runtime).
+12:56:26.064 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency xerces:xercesImpl:2.9.1(runtime) -> xml-apis:xml-apis:1.3.04(dependency: xml-apis#xml-apis;1.3.04 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:26.064 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration commons-lang:commons-lang:2.4(runtime).
+12:56:26.064 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.apache.httpcomponents:httpclient:4.0.2(runtime).
+12:56:26.065 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.httpcomponents:httpclient:4.0.2(runtime) -> org.apache.httpcomponents:httpcore:4.0.1(dependency: org.apache.httpcomponents#httpcore;4.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:26.065 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.httpcomponents:httpclient:4.0.2(runtime) -> commons-logging:commons-logging:1.1.1(dependency: commons-logging#commons-logging;1.1.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:26.065 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.apache.httpcomponents:httpclient:4.0.2(runtime) -> commons-codec:commons-codec:1.3(dependency: commons-codec#commons-codec;1.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:26.066 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.codehaus.plexus:plexus-classworlds:1.2-alpha-9(compile).
+12:56:26.066 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.codehaus.plexus:plexus-classworlds:1.2-alpha-9(compile) -> junit:junit:3.8.1(dependency: junit#junit;3.8.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:26.066 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.codehaus.plexus:plexus-classworlds:1.2-alpha-9(master).
+12:56:26.067 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration junit:junit:3.8.1(compile).
+12:56:26.067 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration junit:junit:3.8.1(master).
+12:56:26.067 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration xml-apis:xml-apis:1.3.04(compile).
+12:56:26.067 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration xml-apis:xml-apis:1.3.04(master).
+12:56:26.068 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.apache.httpcomponents:httpcore:4.0.1(compile).
+12:56:26.068 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.apache.httpcomponents:httpcore:4.0.1(master).
+12:56:26.068 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration commons-logging:commons-logging:1.1.1(compile).
+12:56:26.068 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration commons-logging:commons-logging:1.1.1(master).
+12:56:26.069 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration commons-codec:commons-codec:1.3(compile).
+12:56:26.069 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration commons-codec:commons-codec:1.3(master).
+12:56:26.069 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.codehaus.plexus:plexus-container-default:1.0-alpha-30(compile).
+12:56:26.070 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Changed edges for org.codehaus.plexus:plexus-container-default:1.0-alpha-30(compile) selects same versions as previous traversal. ignoring
+12:56:26.070 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.codehaus.plexus:plexus-container-default:1.0-alpha-30(master).
+12:56:26.070 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Changed edges for org.codehaus.plexus:plexus-container-default:1.0-alpha-30(master) selects same versions as previous traversal. ignoring
+12:56:26.070 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.codehaus.plexus:plexus-classworlds:1.2-alpha-9(runtime).
+12:56:26.071 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.codehaus.plexus:plexus-classworlds:1.2-alpha-9(runtime) -> junit:junit:3.8.1(dependency: junit#junit;3.8.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]})
+12:56:26.071 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration junit:junit:3.8.1(runtime).
+12:56:26.071 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration xml-apis:xml-apis:1.3.04(runtime).
+12:56:26.071 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.apache.httpcomponents:httpcore:4.0.1(runtime).
+12:56:26.072 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration commons-logging:commons-logging:1.1.1(runtime).
+12:56:26.072 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration commons-codec:commons-codec:1.3(runtime).
+12:56:26.072 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration junit:junit:3.8.1(compile).
+12:56:26.073 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Changed edges for junit:junit:3.8.1(compile) selects same versions as previous traversal. ignoring
+12:56:26.073 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration junit:junit:3.8.1(master).
+12:56:26.073 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Changed edges for junit:junit:3.8.1(master) selects same versions as previous traversal. ignoring
+12:56:26.074 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selected org.codehaus.plexus:plexus-utils:2.0.5 from conflicting modules [org.codehaus.plexus:plexus-utils:2.0.5, org.codehaus.plexus:plexus-utils:1.4.5].
+12:56:26.074 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.codehaus.plexus:plexus-utils:2.0.5(compile).
+12:56:26.074 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.codehaus.plexus:plexus-utils:2.0.5(master).
+12:56:26.075 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.codehaus.plexus:plexus-utils:2.0.5(runtime).
+12:56:26.079 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching :sampleGradleJavaProject:unspecified(classpath) to its parents.
+12:56:26.080 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching com.breskeby:GradleSite:0.1-SNAPSHOT(default) to its parents.
+12:56:26.082 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.apache.maven.doxia:doxia-module-apt:1.2(default) to its parents.
+12:56:26.083 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.apache.maven.doxia:doxia-module-xhtml:1.2(default) to its parents.
+12:56:26.083 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.apache.maven.doxia:doxia-converter:1.2(default) to its parents.
+12:56:26.083 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.codehaus.plexus:plexus-utils:2.0.5(compile) to its parents.
+12:56:26.084 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.codehaus.plexus:plexus-utils:2.0.5(master) to its parents.
+12:56:26.084 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.codehaus.plexus:plexus-utils:2.0.5(runtime) to its parents.
+12:56:26.085 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.apache.maven.doxia:doxia-core:1.2(compile) to its parents.
+12:56:26.085 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.apache.maven.doxia:doxia-core:1.2(master) to its parents.
+12:56:26.086 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.apache.maven.doxia:doxia-core:1.2(runtime) to its parents.
+12:56:26.086 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.apache.maven.doxia:doxia-sink-api:1.2(compile) to its parents.
+12:56:26.087 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.apache.maven.doxia:doxia-sink-api:1.2(master) to its parents.
+12:56:26.087 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.apache.maven.doxia:doxia-sink-api:1.2(runtime) to its parents.
+12:56:26.088 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.apache.maven.doxia:doxia-logging-api:1.2(compile) to its parents.
+12:56:26.088 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.apache.maven.doxia:doxia-logging-api:1.2(master) to its parents.
+12:56:26.089 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.codehaus.plexus:plexus-container-default:1.0-alpha-30(compile) to its parents.
+12:56:26.089 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.codehaus.plexus:plexus-container-default:1.0-alpha-30(master) to its parents.
+12:56:26.090 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching xerces:xercesImpl:2.9.1(compile) to its parents.
+12:56:26.090 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching xerces:xercesImpl:2.9.1(master) to its parents.
+12:56:26.090 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching commons-lang:commons-lang:2.4(compile) to its parents.
+12:56:26.091 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching commons-lang:commons-lang:2.4(master) to its parents.
+12:56:26.091 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.apache.httpcomponents:httpclient:4.0.2(compile) to its parents.
+12:56:26.091 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.apache.httpcomponents:httpclient:4.0.2(master) to its parents.
+12:56:26.092 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.apache.maven.doxia:doxia-logging-api:1.2(runtime) to its parents.
+12:56:26.092 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.codehaus.plexus:plexus-container-default:1.0-alpha-30(runtime) to its parents.
+12:56:26.092 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching xerces:xercesImpl:2.9.1(runtime) to its parents.
+12:56:26.092 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching commons-lang:commons-lang:2.4(runtime) to its parents.
+12:56:26.093 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.apache.httpcomponents:httpclient:4.0.2(runtime) to its parents.
+12:56:26.093 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.codehaus.plexus:plexus-classworlds:1.2-alpha-9(compile) to its parents.
+12:56:26.093 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.codehaus.plexus:plexus-classworlds:1.2-alpha-9(master) to its parents.
+12:56:26.094 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching junit:junit:3.8.1(compile) to its parents.
+12:56:26.094 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching junit:junit:3.8.1(master) to its parents.
+12:56:26.094 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching xml-apis:xml-apis:1.3.04(compile) to its parents.
+12:56:26.094 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching xml-apis:xml-apis:1.3.04(master) to its parents.
+12:56:26.095 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.apache.httpcomponents:httpcore:4.0.1(compile) to its parents.
+12:56:26.095 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.apache.httpcomponents:httpcore:4.0.1(master) to its parents.
+12:56:26.095 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching commons-logging:commons-logging:1.1.1(compile) to its parents.
+12:56:26.096 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching commons-logging:commons-logging:1.1.1(master) to its parents.
+12:56:26.096 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching commons-codec:commons-codec:1.3(compile) to its parents.
+12:56:26.096 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching commons-codec:commons-codec:1.3(master) to its parents.
+12:56:26.096 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.codehaus.plexus:plexus-classworlds:1.2-alpha-9(runtime) to its parents.
+12:56:26.097 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching junit:junit:3.8.1(runtime) to its parents.
+12:56:26.097 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching xml-apis:xml-apis:1.3.04(runtime) to its parents.
+12:56:26.097 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.apache.httpcomponents:httpcore:4.0.1(runtime) to its parents.
+12:56:26.097 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching commons-logging:commons-logging:1.1.1(runtime) to its parents.
+12:56:26.098 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching commons-codec:commons-codec:1.3(runtime) to its parents.
+12:56:26.099 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.oldresult.TransientResultsStore] Flushing resolved configuration data in Binary store in C:\Users\chengy\AppData\Local\Temp\gradle4411402649272536543.bin. Wrote root :sampleGradleJavaProject:unspecified:classpath.
+12:56:26.104 [DEBUG] [org.gradle.configuration.project.BuildScriptProcessor] Timing: Running the build script took 3.033 secs
+12:56:26.157 [LIFECYCLE] [org.gradle.BuildResultLogger] 
+12:56:26.157 [LIFECYCLE] [org.gradle.BuildResultLogger] BUILD FAILED
+12:56:26.157 [LIFECYCLE] [org.gradle.BuildResultLogger] 
+12:56:26.157 [LIFECYCLE] [org.gradle.BuildResultLogger] Total time: 4.837 secs
+12:56:26.160 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.memcache.InMemoryDependencyMetadataCache] In-memory dependency metadata cache closed. Repos cached: 3, cache instances: 3, modules served from cache: 6, artifacts: 0
+12:56:26.165 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolved configuration cache closed. Cache reads: 0, disk reads: 0 (avg: 0.0 secs, total: 0.0 secs)
+12:56:26.168 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolution result cache closed. Cache reads: 0, disk reads: 0 (avg: 0.0 secs, total: 0.0 secs)
+12:56:26.169 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.ResolutionResultsStoreFactory] Deleted 2 resolution results binary files in 0.007 secs
+12:56:26.169 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for build file 'C:\Project\gradle\sampleGradleJavaProject\build.gradle' (C:\Users\chengy\.gradle\caches\1.8\scripts\build_2p1uakmvgnptmoo553i18j1hmb\ProjectScript\buildscript).
+12:56:26.170 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-metadata.bin (C:\Users\chengy\.gradle\caches\artifacts-26\module-metadata.bin)
+12:56:26.173 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache artifact-at-url.bin (C:\Users\chengy\.gradle\caches\artifacts-26\artifact-at-url.bin)
+12:56:26.174 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache dynamic-revisions.bin (C:\Users\chengy\.gradle\caches\artifacts-26\dynamic-revisions.bin)
+12:56:26.174 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (C:\Users\chengy\.gradle\caches\artifacts-26).
+12:56:26.177 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@466a3728, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@674b4735, org.gradle.logging.internal.JavaUtilLoggingConfigurer@7f301d8d]
