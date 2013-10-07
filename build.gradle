@@ -53,11 +53,11 @@ repositories{
 
 dependencies{
 
-    compile "org.apache.maven.doxia:doxia-converter:1.2"
+    //compile "org.apache.maven.doxia:doxia-converter:1.2"
 
 
 
-    runtime 'org.apache.maven.doxia:doxia-module-apt:1.2'
+    runtime 'org.apache.maven.doxia:doxia-module-apt:1.4'
     runtime group: 'org.apache.maven.wagon', name: 'wagon-provider-api', version: '1.0'
     runtime group: 'org.apache.maven.wagon', name: 'wagon-file', version: '1.0'
     compile gradleApi()
@@ -87,6 +87,7 @@ project(':bluewhale') {
 }*/
 
 allprojects {
+	project.version = "9.9.9.9"
     task hello << { task -> println "I'm $task.project.name" }
 }
 
@@ -108,3 +109,4 @@ project(':bluewhale').hello << {
 */
 println name
 println project.name
+println project.version
