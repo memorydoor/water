@@ -21,6 +21,12 @@ allprojects {
     site {
         //outputDirectory = "yes"
         url = "file:c:/temp"
+
+
+        //skin.groupId = "org.apache.maven.skins"
+        skin.artifactId = "maven-fluido-skin"
+        skin.version = "1.3.0"
+
     }
 }
 
