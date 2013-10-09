@@ -9,12 +9,11 @@
     </bannerRight>
     <body>
         <breadcrumbs>
+            <item name="Parent" href="../index.html"/>
         </breadcrumbs>
 		
         <menu name="Documents">
-            <item name="Component Level Design" href="dui-component.html"/>
-            <item name="Environments" href="environments.html"/>
-            <item name="UI Stats Recording Design" href="stats-design.html"/>
+            <item name="krill" href="krill.html"/>
         </menu>
 
         <menu ref="modules"/>

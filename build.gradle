@@ -12,7 +12,19 @@ buildscript {
         classpath group: 'org.oclc.gradle', name: 'gradle-site', version: '0.1-SNAPSHOT'
     }
 }
-apply plugin: 'site'
+
+
+
+allprojects {
+    apply plugin: 'site'
+
+    site {
+        //outputDirectory = "yes"
+        url = "file:c:/temp"
+    }
+}
+
+
 
 apply plugin: 'java'
 apply plugin: 'project-report'
@@ -78,15 +90,3 @@ subprojects {
 project(':bluewhale').hello << {
     println "- I'm the largest animal that has ever lived on this planet."
 }
-
-/*subprojects {
-    apply plugin: 'site'
-}*/
-
-
-/*
-   misc experiments
-*/
-println name
-println project.name
-println project.version
